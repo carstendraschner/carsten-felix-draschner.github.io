@@ -23,6 +23,48 @@
   <main>
     <h2>Research</h2>
     <p>This is the research page where you can provide information about your research interests and projects.</p>
+
+    <section>
+      <h3>Contributions</h3>
+      <p>Our contributions cover several areas of Scalable Distributed Machine Learning on KGs. These areas include the automatic development of feature-extracting SPARQL queries, distributed Semantic Similarity Estimation, and the construction of scalable downstream ML pipelines for RDF KGs. Additionally, we consider technical implementation optimizations for Ethical and Sustainability considerations of KG-based ML.</p>
+
+      <ol>
+        <li><strong>DistSim - Scalable Distributed in-Memory Semantic Similarity Estimation for RDF Knowledge Graphs:</strong> DistSim includes several feature-based graph entity similarity estimators. The Similarity Estimation Pipeline was created by merging generic software modules. DistSim introduces MinHash with locality sensitivity hashing for large-scale RDF data to improve scalability over all-pair similarity estimations. DistSim's modules can be configured using a variety of (hyper-)~parameters to manage the trade-off between information considered and processing time. Furthermore, the similarity estimation pipeline's output is native RDF. DistSim is part of the SANSA stack, with documentation in Scala-docs and unit tests.</li>
+
+        <li><strong>Literal2Feature - An Automatic Scalable RDF Graph Feature Extractor:</strong> Literal2Feature is a generic, distributed, and scalable software framework for translating massive RDF data into an explainable feature matrix. Many standard ML algorithms can make use of this matrix. Our method uses Semantic Web and Big Data technologies to extract a variety of features from a big RDF graph by deep traversing it. The proposed framework is open-source, technically documented, and wholly integrated into the Semantic Analytics Stack community project.</li>
+
+        <li><strong>DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs:</strong> The generic, scalable, and distributed framework DistRDF2ML is presented for building in-memory data preprocessing pipelines for Spark-based ML on RDF KGs. This framework includes software modules that convert large-scale RDF data into fixed-length numeric feature vectors suitable for ML. The generated modules are tailored to KGs' multi-modal nature. The pipeline's modules, hyper-parameters, and outputs are all exported in a semantic structure that can be utilized to improve the original KG. The semantic representation of metadata and ML outcomes has the advantage of enhancing the reusability, explainability, and reproducibility of ML processes.</li>
+
+        <li><strong>Semantic Analytics in the palm of your browser:</strong> Setting up a distributed in-memory cluster computation system with all its dependencies and environments can be challenging, and it may also necessitate significant processing power. We lower the entry barriers for analyzing and testing the SANSA framework's capabilities and potentially bringing this technology to production using only the browser. We show how to run the SANSA stack within Databricks without requiring extra Apache Spark knowledge or installs.</li>
+
+        <li><strong>Semantic Web Analysis with Flavor of Micro-Services:</strong> Developing distributed KG-based ML pipelines demands in-depth knowledge and experience in computer systems, networking, distributed computing, and other related fields. Furthermore, even if developers have the technical skills, creating such a cluster takes time and effort. To address the challenges mentioned above, we present a micro-service Rest-API-based architecture that allows end-users to readily access the capabilities of SANSA and distributed semantic data analysis without requiring technical expertise in these domains.</li>
+
+        <li><strong>SimE4KG - Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs:</strong> We present the SimE4KG framework, which provides generic open-source modules for computing semantic similarity estimation in multi-modal KGs. SimE4KG delivers reproducible, reusable, and explainable results to justify the computing costs of similarity estimation. The pipeline outcomes are a native semantic RDF-KG, including the experiment results, hyper-parameter setup, and result explanation, as the most influential features. We utilized Apache Spark to develop a distributed strategy for efficient and scalable execution in memory. This framework's overall development is integrated into the SANSA distributed semantic analytics stack.</li>
+
+        <li><strong>Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning:</strong> This paper presents ethical and sustainability considerations in KG-based ML. These are presented along the classical R&D life-cycle, including responsible AI check, technical system setup, data insights, machine learning, training & evaluation, and finally, deployment. Each of these steps is introduced by multiple sub-dimension. These are structured by definition, explaining challenges, providing examples, stating research questions, and offering recommendations. We also investigate data validity, bias, and privacy-related concerns of KG data in ML pipelines. The ethical and explainability dimension, as well as the sustainability aspect of processing power-intensive KG-based ML, are presented.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Publications</h3>
+      <p>The thesis presented here also includes scientific publications developed by Carsten Felix Draschner. The Ph.D. mentor, Dr. Hajira Jabeen, and the Ph.D. supervisor Prof. Dr. Jens Lehmann, were always available in terms of content and methodology and helped with the further development of the ideas.</p>
+
+      <h4>Conference Papers (Peer-Reviewed):</h4>
+      <ol>
+        <li>Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen, <em>DistSim - Scalable Distributed in-Memory Semantic Similarity Estimation for RDF Knowledge Graphs</em>, 2021 IEEE 15th International Conference on Semantic Computing (ICSC), 2021, pp. 333-336, DOI: <a href="https://ieeexplore.ieee.org/document/9364473">10.1109/ICSC50631.2021.00062</a>.</li>
+        <li>Farshad B. Moghaddam, Carsten Felix Draschner, Jens Lehmann and Hajira Jabeen, <em>Literal2Feature: An automatic scalable RDF graph feature extractor</em>, in: Further with Knowledge Graphs, International Conference on Semantic Systems, (SEMANTICS), IOS Press, 2021, pp. 74–88. DOI: <a href="https://ebooks.iospress.nl/volumearticle/57407">10.3233/SSW210036</a>.</li>
+        <li>Carsten Felix Draschner, Claus Stadler, Farshad B. Moghaddam, Jens Lehmann, and Hajira Jabeen. 2021. <em>DistRDF2ML - Scalable Distributed In-Memory Machine Learning Pipelines for RDF Knowledge Graphs</em>. Proceedings of the 30th ACM International Conference on Information & Knowledge Management (CIKM). Association for Computing Machinery, New York, NY, USA, 4465–4474. DOI: <a href="https://dl.acm.org/doi/10.1145/3459637.3481999">10.1145/3459637.3481999</a>.</li>
+        <li>Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann, "<em>SimE4KG: Distributed Explainable multi-modal Semantic Similarity Estimation for Knowledge Graphs</em>", 2022 IEEE Fifth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), pp. 1-8, DOI: <a href="https://ieeexplore.ieee.org/document/9939143">10.1109/AIKE55402.2022.00007</a>.</li>
+        <li>Carsten Felix Draschner, Hajira Jabeen, Jens Lehmann, "<em>Ethical and Sustainability considerations for Knowledge Graphs based Machine Learning</em>", 2022 IEEE Fifth International Conference on Artificial Intelligence and Knowledge Engineering (AIKE), pp. 53-60, DOI: <a href="https://ieeexplore.ieee.org/document/9939282">10.1109/AIKE55402.2022.00015</a>.</li>
+      </ol>
+
+      <h4>Workshops, Demos, and Doctoral Consortium (Peer-Reviewed):</h4>
+      <ol start="6">
+        <li>Carsten Felix Draschner, Farshad B. Moghaddam, Jens Lehmann, Hajira Jabeen, <em>Semantic Analytics in the Palm of your Browser</em>, LAMBDA Doctoral Workshop 2021, <a href="http://ceur-ws.org/Vol-3195/paper2.pdf">link</a>.</li>
+        <li>Farshad B. Moghaddam, Carsten Felix Draschner, Jens Lehmann, Hajira Jabeen, <em>Semantic Web Analysis with Flavor of Micro-Services</em>, LAMBDA Doctoral Workshop 2021, <a href="http://ceur-ws.org/Vol-3195/paper1.pdf">link</a>.</li>
+      </ol>
+    </section>
+
   </main>
   <footer>
     <p>&copy; 2023 Carsten Felix Draschner, PhD</p>
