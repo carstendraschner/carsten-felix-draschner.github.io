@@ -69,6 +69,220 @@
 
       <li>
         <div class="blogpost">
+          <h3><strong>𝗘𝘃𝗲𝗿 𝘄𝗼𝗻𝗱𝗲𝗿𝗲𝗱 𝗮𝗯𝗼𝘂𝘁 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗟𝗟𝗠 𝘀𝗶𝘇𝗲𝘀: 𝟳𝗕, 𝟭𝟯𝗕 , 𝟳𝟬𝗕?</strong></h3>
+          <p>𝗪𝗵𝗲𝗿𝗲 𝗱𝗼 𝘁𝗵𝗼𝘀𝗲 𝗺𝗼𝗱𝗲𝗹 𝘀𝗶𝘇𝗲𝘀 𝗰𝗼𝗺𝗲 𝗳𝗿𝗼𝗺?... 𝗠𝘆 𝗳𝗶𝗻𝗱𝗶𝗻𝗴𝘀!</p>
+          <img src="images/1707838124577-3.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗕𝗮𝗰𝗸𝗴𝗿𝗼𝘂𝗻𝗱 📝<br>
+            • As an alternative to AIaaS like ChatGPT, you can interact with LLMs based on open-source models<br>
+            • A good source for open-source models is the Hugging Face model library.<br>
+            • Many models are finetuned variants of existing models like the Meta LLAMA-2 is available as 7B, 13B, 70B.<br>
+            • Inference runs faster on GPUs like NVIDIA V/A/H100.<br>
+            • Bigger models: slower inference & have higher (environmental) costs while bigger LLMs mostly outperform smaller models in benchmark-tasks.<br>
+            • Within multiple use cases, I select the best fitting OS model at @Comma Soft AG use cases.<br>
+            • Different use cases request different model capabilities including model “knowledge” or inference speed.<br>
+            • I was wondering why many models follow the parameter “step sizes” 7B, 13B, and 70B.<br>
+            <span class="expanded-text">
+              𝗠𝘆 𝗙𝗶𝗻𝗱𝗶𝗻𝗴𝘀 🔍<br>
+              • Many models are finetuned versions of LLAMA-2 as this was a high-performing open-source LLM available within a “mostly” attractive OS license.<br>
+              • In most cases, model finetuning does not change the number of parameters.<br>
+              • LLAMA paper states it provides LLMs: [...] "that achieve the best possible per- formance at various inference budgets" [...]<br>
+              • Common hardware is 16GB or 80GB of VRAM. Usually, you have one or two of those GPUs within a system.<br>
+              • Models are by default available as 16bit representation which leads to 2byte per parameter.<br>
+              • To run a model, you need space for parameters and a bit remaining for your batch. So 7B fits on 1x 16GB GPU, 13B fits on 2x 16GB GPUs, (the Lab-leaked LLAMA-1 with 35B fits on 1x 80GB GPU) and the 70B LLAMA-2 model runs on 2x 80GB GPUs.<br>
+              <br>
+              𝗜𝗠𝗛𝗢 🤗<br>
+              • I am looking forward to how 4bit quantization like GPTQ or AWQ changes the model sizes as you might also fit a roughly 145B quantized model on a single A100 with 80GB.<br>
+              • Some use cases might need fewer model parameters but bigger batches, longer max context length, or faster inference which means fewer parameters or fewer deep networks.<br>
+              • Consider smaller models especially cause of the environmental costs if performance is sufficient.<br>
+              • I am wondering if there is a true reason for how the parameters are combined within the architecture, the numbers partially feel randomly picked like 80 transformer layers for LLAMA-2 70B vs 40 of 13B version.<br>
+              <br>
+              𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 🤔<br>
+              • What is your preferred model(-family)?<br>
+              • Do you use your models as plain or quantized versions?<br>
+              • Do you think the model architectures of finetuned context window, hidden size, intermediate size, number heads, and transformer layers are well chosen that build the total needed VRAM volume?<br>
+              <br>
+              Follow me for more content ❤️<br>
+              <br>
+              #artificialintelligence #genai #maschinelearning #llm
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-maschinelearning-activity-7163192285034172416-AItW?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>𝗪𝗲’𝘃𝗲 𝗯𝗲𝗮𝘁𝗲𝗻 𝗚𝗣𝗧𝟰! … 𝗶𝘀 𝗮 𝘀𝗲𝗻𝘁𝗲𝗻𝗰𝗲 𝘄𝗵𝗶𝗰𝗵 𝘀𝘁𝗮𝗿𝘁𝘀 𝘁𝗼 𝗮𝗻𝗻𝗼𝘆 𝗺𝗲. 𝗔𝗯𝗼𝘂𝘁 𝗠𝗶𝘀𝘁𝗿𝘂𝘀𝘁 𝗶𝗻 𝗟𝗟𝗠 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻.</strong></h3>
+          <p>Benchmark contamination in LLMs? How to evaluate GenAI?!</p>
+          <img src="images/1707147429256-3.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • News is flooded with LLMs being “better” than GPT4 <br>
+            • LLM Evaluation is Difficult <br>
+            • Benchmark Contamination is a serious issue <br>
+            • Build your own use case specific benchmarks<br>
+            <span class="expanded-text">
+              𝗪𝗵𝘆 𝗱𝗼 𝘄𝗲 𝗻𝗲𝗲𝗱 𝗟𝗟𝗠 𝗯𝗲𝗻𝗰𝗵𝗺𝗮𝗿𝗸𝘀? 📊<br>
+              • Many use cases can be solved by GenAI more specifically by LLMs <br>
+              • Many LLMs are available as AIaaS or as an open-source model <br>
+              • At some point, you need to select a specific model for your dedicated use case <br>
+              • News is flooded by a multitude of models that are better than some reference LLM like OpenAIs GPT4<br>
+              <br>
+              𝗪𝗵𝘆 𝗶𝘀 𝗟𝗟𝗠 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗱𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁? 👩🏽‍🔬<br>
+              • When we speak about leaderboards and benchmarks, we look into specific types of tasks.<br>
+              • Those tasks need to be “easily measurable” as LLM might generate arbitrary texts.<br>
+              • e.g. MMLU is simply a multiple choice and looks if first generated character is A-E.<br>
+              • Other Benchmarks use e.g. another LLM as judge (which is expensive) and also fuzzy.<br>
+              • 𝗜𝘁 𝗶𝘀 𝗮𝗹𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝘀𝘀𝗶𝗯𝗹𝗲 𝘁𝗼 𝗺𝗲𝗮𝘀𝘂𝗿𝗲 𝗶𝗳 𝗮𝗻 𝗟𝗟𝗠 𝗹𝗲𝗮𝗿𝗻𝗲𝗱 𝘁𝗵𝗲 𝗯𝗲𝗻𝗰𝗵𝗺𝗮𝗿𝗸 𝗱𝗮𝘁𝗮 𝗯𝘆 𝗵𝗲𝗮𝗿𝘁 𝗶𝗻 𝗶𝘁𝘀 𝗽𝗿𝗲𝘁𝘂𝗻𝗶𝗻𝗴/𝗳𝗶𝗻𝗲𝘁𝘂𝗻𝗶𝗻𝗴 𝘀𝘁𝗮𝗴𝗲 𝘁𝗼 𝗴𝗲𝘁 𝗼𝗻 𝘁𝗼𝗽 𝗼𝗳 𝘁𝗵𝗲 𝗹𝗲𝗮𝗱𝗲𝗿𝗯𝗼𝗮𝗿𝗱.<br>
+              <br>
+              𝗠𝘆 𝗧𝗮𝗸𝗲𝘀 🔍<br>
+              • Leaderboards are only a starting point for model selection.<br>
+              • GenAI approach selection is a multidimensional problem.<br>
+              • Develop a use-case-specific evaluation framework e.g. does the generated code run/match unit tests, is secure and fast<br>
+              • For most of my use cases I barely care if the model can solve English multiple choice questions by simply evaluating if the first character is an A, B, C, D, or E like in MMLU.<br>
+              • Already simple throughput benchmarks seem to have their issues. see: <a href="https://rb.gy/5l8qqp" target="_blank">https://rb.gy/5l8qqp</a><br>
+              <br>
+              𝗘𝘅𝘁𝗿𝗮𝗰𝘁 𝗼𝗳 𝗺𝘆 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗰𝗿𝗶𝘁𝗲𝗿𝗶𝗮 👨🏼‍💻<br>
+              • Under which license is the model available and does the license allow my intended usage?<br>
+              • What do we know about retuning especially regarding: multi-language support, instruction tuning, alignment, and context length?<br>
+              • What hardware requirements/costs do we face, and which throughput can we provide? e.g. 13B vs 8x7B vs 70B ...<br>
+              <br>
+              𝗖𝗿𝗲𝗱𝗶𝘁 ❤️<br>
+              • To Hugging Face and other platforms for providing LLM Leaderboards and easily accessible models<br>
+              • To OpenAI with its GPT-4 as reference established to be beaten<br>
+              • To all benchmark creators and researchers supporting transparent and reliable GenAI evaluation<br>
+              <br>
+              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 ?<br>
+              • What are the criteria you look at?<br>
+              • What are the best benchmarks for you & why do you trust those?<br>
+              • Do you create your own benchmarks as we do Comma Soft AG<br>
+              <br>
+              #generativeai #artificialintelligence #llm #machinelearning #benchmark
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-artificialintelligence-llm-activity-7160295294906101761-koWS?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>𝗗𝗔𝗟𝗟𝗘 𝗵𝗮𝘀 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹𝘀. 𝗬𝗼𝘂𝗿 𝗶𝗺𝗮𝗴𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗳𝗶𝗹𝘁𝗲𝗿𝗲𝗱 𝗯𝗮𝘀𝗲𝗱 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗽𝗿𝗼𝗺𝗽𝘁. "𝗗𝗲𝗮𝗱 𝗰𝗼𝗼𝗸𝗶𝗲𝘀" 𝗺𝗮𝘆 𝗯𝗲 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 ...𝘀𝗼𝗺𝗲𝘁𝗶𝗺𝗲𝘀</strong></h3>
+          <p>Interesting findings on DALLE's content filtering mechanisms.</p>
+          <img src="images/1706806459431.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟; 𝗗𝗥;<br>
+            • DALLE-3 filters your content 𝐀𝐅𝐓𝐄𝐑 image creation<br>
+            • With prompt “dead cookies” you can reproduce inconsistent filtering over OpenAI API<br>
+            • 40% of cases with same “dead cookies” prompt stop through content filter and 60% reach us over API<br>
+            <span class="expanded-text">
+              <br>
+              𝗪𝗵𝗮𝘁 𝗶𝘀 𝗗𝗔𝗟𝗟𝗘-𝟯 🖼️<br>
+              • DALLE 3 is a generative text to image model by OpenAI also available as API<br>
+              • You pay per image<br>
+              • Images are created based on your prompt like “dead cookies”.<br>
+              • You can also add details like: “Dead Cookies in cute Pixar style” or “Dead cookies with dramatic situation in cute Pixar style”<br>
+              • Open-Source image GenAI models alternatives are available e.g. Stable Diffusion<br>
+              • Image GenAI are under discussion because of misuse like deepfakes or because of reproducing intellectual property.<br>
+              <br>
+              𝗙𝗶𝗻𝗱𝗶𝗻𝗴/𝗢𝗯𝘀𝗲𝗿𝘃𝗮𝘁𝗶𝗼𝗻: 👩🏽‍🔬<br>
+              • DALLE-3 has a content filter to reduce misuse<br>
+              • If you hit the content filter you do not get a resulting image for your prompt.<br>
+              • The content filter is not applied based on the prompt, it is applied 𝐀𝐅𝐓𝐄𝐑 DALLE-3 generated the image, and the API decides in an extra step if the image should be sent to you. Likely some Image classifier.<br>
+              • 𝗦𝗮𝗺𝗲 𝗽𝗿𝗼𝗺𝗽𝘁 sometimes results in an image and sometimes in a content-filter response. For the prompt “dead cookies” 𝘆𝗼𝘂 𝗴𝗲𝘁 𝗶𝗻 𝟲𝟬% 𝗼𝗳 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗮𝗻 𝗶𝗺𝗮𝗴𝗲 𝗮𝗻𝗱 𝗶𝗻 𝟰𝟬% 𝗮 𝗰𝗼𝗻𝘁𝗲𝗻𝘁 𝗳𝗶𝗹𝘁𝗲𝗿 issue<br>
+              <br>
+              𝗛𝗼𝘄 𝘄𝗲 𝗳𝗼𝘂𝗻𝗱 𝗼𝘂𝘁 🍪<br>
+              • We @Comma Soft AG develop tools and pipelines with OS GenAI but also with API requests.<br>
+              • For good API-response handling we also had to consider content filter scenario. so we combined trigger words like "dead" with something like "cookies"<br>
+              • We had inconsistent content filter and still the finding that in case of content filter the response time was roughly as long as in the case of created image.<br>
+              <br>
+              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 𝘁𝗼 𝘆𝗼𝘂 🤷🏼‍♂️<br>
+              • Who should pay for “dead cookies” if the resulting image was created but not sent due to content filter?<br>
+              • Have you known that the content filter for DALLE-3 is applied after image generation?<br>
+              • Do you also encounter content filter although your prompts were in principle ok?<br>
+              • Do you think content filters are a reasonable image GenAI misuse countermeasure?<br>
+              • How would you reduce Image GenAI misuse?<br>
+              • And 𝗺𝗼𝘀𝘁 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗶𝗻𝗴 (and we might never know OpenAI/DALL-E Open Ai), how do “Dead Cookies” images look like which are filtered out? 😅<br>
+              <br>
+              The image was created by the prompt "Dead cookies in cute pixar style"<br>
+              If you like more of such content, reach out to me 😊<br>
+              <br>
+              #artificalintelligence #genai #aiethics #dalle #openai #texttoimage #deepfakes
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>𝗘𝘃𝗶𝗹 𝗟𝗟𝗠𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲! 𝗕𝗿𝗲𝗮𝗸 𝗚𝗲𝗻𝗔𝗜 𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗳𝗶𝗻𝗲𝘁𝘂𝗻𝗶𝗻𝗴!</strong></h3>
+          <p>𝐍𝐞𝐞𝐝 𝐟𝐨𝐫 𝗟𝗟𝗠 𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝐭𝐫𝐚𝐧𝐬𝐩𝐞𝐫𝐚𝐧𝐜𝐲?</p>
+          <img src="images/evilllm.png" alt="Image 1">
+          <p class="expandable-text">
+            For one of the most interesting open source LLMs, the Mixtral 8x7B a finetuned LLM is available which has “broken” Alignment & answers to problematic prompts without prompt injections. Example in images (reference see below) shows “funny” but the astonishing LLM capabilities with broken Alignment.<br>
+            <span class="expanded-text">
+              Powerful LLMs are mostly aligned (Mixtral, LLAMA2, GPT4, …)<br>
+              • They try to not give problematic responses<br>
+              • Some prompt-based attacks are already known to breach this behavior<br>
+              • But: model weights can be finetuned to break Alignment<br>
+              • Some use cases might need different Alignment than preimpleneted LLM Alignment or our standards are not reflected within LLM behavior.<br>
+              • Alignment process is majorly intransparent<br>
+              <br>
+              𝗟𝗟𝗠/𝗚𝗣𝗧 𝗰𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝘁𝗵𝗿𝗲𝗲-𝘀𝘁𝗲𝗽 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵 ⚙️<br>
+              1) Initial pretuning: Next token prediction<br>
+              2) Chat/Instruction finetuning: training for conversational interaction & execution of tasks<br>
+              3) Alignment: Adjust answers to not respond to critical questions like: creation of hate speech, critical advise in health issues, creation of spam or fraudulent content, and other<br>
+              <br>
+              𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝗘𝘅𝗽𝗹𝗮𝗻𝗮𝘁𝗶𝗼𝗻 👩🏽‍🏫<br>
+              • Done in a mixture of click workers (ethical aspects raised in linked article*) and AI as evaluator (RLHF/RLAIF). Rate which answers are better not to be given or should be given differently. Based on feedback model weights are adjusted.<br>
+              • Mostly intransparent process<br>
+              • Unknown what is truly covered (not) to be answered<br>
+              <br>
+              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 🤷🏼‍♂️<br>
+              • Do you had ever Issues with Alignment in LLM interaction?<br>
+              • Do you check Alignment when selecting an OS Model?<br>
+              • Have you ever adjusted Alignment on model weights basis?<br>
+              • Do you think it is valuable or too critical to release more or less aligned LLMs?<br>
+              • Do we need regulation for model alignment?<br>
+              <br>
+              𝗜𝗠𝗛𝗢 🤗<br>
+              • We need transparent statements how models were aligned and how their behavior has changed, while covering ethical concerns when providing LLMs with reduced Alignment.<br>
+              • We need information how easily well adapted LLMs can be tripped with prompt engineering or finetuning.<br>
+              • We might need less aligned LLMs for research or in special use cases:<br>
+              e.g. if in healthcare sector a model should respond because an expert is using it as assistance, or for security reasons to create e.g. sample datasets for countermeasures against LLM based phishing attacks (which are based on de-aligned) LLMs<br>
+              • Release models with awareness of possible dual use!<br>
+              <br>
+              Within a great team @Comma Soft AG we are evaluating, selecting and finetuning open source LLMs for dedicated use cases.<br>
+              <br>
+              Credit to:<br>
+              Eric Hartford & Hugging Face & Mistral AI<br>
+              <a href="https://lnkd.in/eyBSi4iu" target="_blank">https://lnkd.in/eyBSi4iu</a><br>
+              AI Ethics - clickworkers:<br>
+              <a href="https://lnkd.in/eKFfQZfF" target="_blank">https://lnkd.in/eKFfQZfF</a><br>
+              <br>
+              #genai #artificialintelligence #aiethics #huggingface #llm #alignment
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_what-happens-when-you-break-llm-alignment-activity-7157765084734214144-2yGt?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+      
+
+      <li>
+        <div class="blogpost">
           <h3><strong>𝗟𝗟𝗔𝗠𝗔𝟮 𝟭𝟯𝗕 𝗶𝘀 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗟𝗟𝗔𝗠𝗔𝟮 𝟳𝗕, 𝗮𝗰𝗰𝗼𝗿𝗱𝗶𝗻𝗴 𝘁𝗼 𝗡𝗩𝗜𝗗𝗜𝗔 𝗯𝗲𝗻𝗰𝗵𝗆𝗮𝗿𝗸!</strong></h3>
           <p>Interesting findings on NVIDIA's LLAMA 2 benchmark results.</p>
           <img src="images/1706193075396-2.jpeg" alt="Image 1">
@@ -103,34 +317,6 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-machinelearning-llama-activity-7156292445465419776-li69?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-      
-      
-      
-      
-      <!-- Blogpost 1 -->
-      <li>
-        <div class="blogpost">
-          <div class="blogpost-content">
-            <h3><strong>Post 1: Title of the First Blog Post</strong></h3>
-            <p>Short description of the first blog post.</p>
-          </div>
-          <img src="image1.jpg" alt="Image 1">
-          <div class="blogpost-content">
-            <p class="expandable-text">
-              This is the first sentence of the blog post.
-              <span class="expanded-text">
-                This is the rest of the text that can be expanded. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
-              </span>
-            </p>
-            <button class="expand-button">Read more</button>
-            <button class="collapse-button" style="display: none;">Read less</button>
-            <a class="linkedin-button" href="https://www.linkedin.com/..." target="_blank">LinkedIn Post</a>
-          </div>
-        </div>
-      </li>
-      
-      <!-- Additional blog posts can be added in a similar way -->
       
     </ul>
   </main>
