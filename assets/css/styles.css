@@ -1,15 +1,16 @@
 body {
   font-family: Arial, sans-serif;
+  line-height: 1.6;
   margin: 0;
   padding: 0;
-  line-height: 1.6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
 header {
-  background: #f4f4f4;
+  background: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
@@ -18,19 +19,40 @@ header h1 {
   margin: 0;
 }
 
-nav ul {
+header nav ul {
   list-style: none;
   padding: 0;
 }
 
-nav ul li {
+header nav ul li {
   display: inline;
-  margin-right: 10px;
+  margin: 0 1rem;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
   padding: 20px;
   flex: 1;
+}
+
+main h2 {
+  margin-top: 0;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main section h3 {
+  margin-top: 0;
+}
+
+main section p {
+  margin-bottom: 10px;
 }
 
 footer {
