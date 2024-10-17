@@ -1,0 +1,83 @@
+body.contact-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+header.contact-page-header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header.contact-page-header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header.contact-page-header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+header.contact-page-header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main.contact-page-main {
+  padding: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  padding: 1rem;
+  width: 45%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-item img {
+  height: 50px; /* Fixed height */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 1rem;
+}
+
+.contact-item div {
+  flex-grow: 1;
+}
+
+.contact-item h3 {
+  margin-top: 0;
+}
+
+.contact-item a {
+  color: #0073b1; /* LinkedIn blue */
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+footer.contact-page-footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
