@@ -5,6 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog - Carsten Felix Draschner, PhD</title>
   <link rel="stylesheet" href="../assets/css/styles.css">
+  <style>
+    /* Collapsible text */
+    .expanded-text {
+      display: none; /* Initially hide the text */
+    }
+
+    /* Subtle buttons */
+    .expand-button, .collapse-button, .linkedin-button {
+      background-color: #f0f0f0; /* Light background color matching white background */
+      color: #333; /* Dark text color for better contrast */
+      border: 1px solid #ccc; /* Subtle border */
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .expand-button:hover, .collapse-button:hover, .linkedin-button:hover {
+      background-color: #e0e0e0; /* Slightly darker on hover */
+    }
+
+    /* Center blogposts and images */
+    .blogpost {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .blogpost img {
+      width: 100%; /* Image should take the full width of the container */
+      height: auto;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -23,12 +56,69 @@
   <main>
     <h2>Blog</h2>
     <ul>
-      <li><a href="post1.html">Post 1</a></li>
-      <!-- Add more blog posts here -->
+      <!-- Blogpost 1 -->
+      <li>
+        <div class="blogpost">
+          <h3><strong>Post 1: Title of the First Blog Post</strong></h3>
+          <p>Short description of the first blog post.</p>
+          <img src="image1.jpg" alt="Image 1">
+          <p class="expandable-text">
+            This is the first sentence of the blog post.
+            <span class="expanded-text">
+              This is the rest of the text that can be expanded. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/..." target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+      <!-- Additional blog posts can be added in a similar way -->
+      
     </ul>
   </main>
   <footer>
     <p>&copy; 2023 Carsten Felix Draschner, PhD</p>
   </footer>
+  <script>
+    // Select all expand buttons
+    const expandButtons = document.querySelectorAll('.expand-button');
+    
+    // Add an event listener to expand the text
+    expandButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Select the expandable text and the collapse button
+        const expandedText = button.previousElementSibling.querySelector('.expanded-text');
+        const collapseButton = button.nextElementSibling;
+        
+        // Show the expandable text and the collapse button
+        expandedText.style.display = 'block';
+        collapseButton.style.display = 'inline';
+        
+        // Hide the expand button
+        button.style.display = 'none';
+      });
+    });
+    
+    // Select all collapse buttons
+    const collapseButtons = document.querySelectorAll('.collapse-button');
+    
+    // Add an event listener to collapse the text
+    collapseButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Select the expandable text and the expand button
+        const expandedText = button.previousElementSibling.previousElementSibling.querySelector('.expanded-text');
+        const expandButton = button.previousElementSibling;
+        
+        // Hide the expandable text and the collapse button
+        expandedText.style.display = 'none';
+        button.style.display = 'none';
+        
+        // Show the expand button
+        expandButton.style.display = 'inline';
+      });
+    });
+  </script>
 </body>
 </html>
