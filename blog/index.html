@@ -20,6 +20,7 @@
       cursor: pointer;
       margin-top: 10px;
       font-size: 14px;
+      display: inline-block;
     }
 
     .expand-button:hover, .collapse-button:hover, .linkedin-button:hover {
@@ -30,12 +31,21 @@
     .blogpost {
       width: 600px;
       margin: 0 auto;
-      text-align: center;
     }
 
     .blogpost img {
       width: 100%; /* Image should take the full width of the container */
       height: auto;
+    }
+
+    .blogpost-content {
+      text-align: left; /* Left-align the text */
+    }
+
+    /* Remove list styling */
+    ul {
+      list-style-type: none; /* Remove bullets/numbers */
+      padding: 0; /* Remove default padding */
     }
   </style>
 </head>
@@ -56,21 +66,67 @@
   <main>
     <h2>Blog</h2>
     <ul>
-      <!-- Blogpost 1 -->
+
       <li>
         <div class="blogpost">
-          <h3><strong>Post 1: Title of the First Blog Post</strong></h3>
-          <p>Short description of the first blog post.</p>
-          <img src="image1.jpg" alt="Image 1">
+          <h3><strong>𝗟𝗟𝗔𝗠𝗔𝟮 𝟭𝟯𝗕 𝗶𝘀 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗟𝗟𝗔𝗠𝗔𝟮 𝟳𝗕, 𝗮𝗰𝗰𝗼𝗿𝗱𝗶𝗻𝗴 𝘁𝗼 𝗡𝗩𝗜𝗗𝗜𝗔 𝗯𝗲𝗻𝗰𝗵𝗆𝗮𝗿𝗸!</strong></h3>
+          <p>Interesting findings on NVIDIA's LLAMA 2 benchmark results.</p>
+          <img src="images/1706193075396-2.jpeg" alt="Image 1">
           <p class="expandable-text">
-            This is the first sentence of the blog post.
+            𝗚𝗲𝗻𝗔𝗜 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆/𝗡𝗩𝗜𝗗𝗜𝗔: 𝗜 𝗮𝗺 𝗰𝗼𝗻𝗳𝘂𝘀𝗲𝗱! 𝗖𝗮𝗻 𝗮𝗻𝘆𝗼𝗻𝗲 𝗵𝗲𝗹𝗽?<br>
             <span class="expanded-text">
-              This is the rest of the text that can be expanded. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+              𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗱𝗶𝗻𝗴𝘀 📈<br>
+              • NVIDIA LLAMA 2 Benchmark (including sentence throughput) <br>
+              • Compares LLAMA-2 7B, 13B, and 70B <br>
+              • Weird finding: LLAMA 13B is reported to be faster than LLAMA 7B <br>
+              • Explicit Numbers: 7B Model has ~4 sentences/second throughput, 13B Model has ~7 sentences/second (LLAMA 70B ~1 sentence/second - this last one suits my expectation)<br>
+              <br>
+              𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 🤔<br>
+              • NVIDIA NVIDIA AI, is there a mistake or can anyone else help me understand these numbers?<br>
+              <br>
+              𝗛𝗼𝘄 𝘄𝗲 𝗳𝗼𝘂𝗻𝗱 𝗼𝘂𝘁 📚<br>
+              • Within our lovely GenAI team @Comma Soft AG, we are looking into tech details to implement the best solution <br>
+              <br>
+              𝗟𝗶𝗻𝗸 📚<br>
+              • Source I am talking about: https://lnkd.in/e2sUsi63 📚<br>
+              <br>
+              𝗖𝗿𝗲𝗱𝗶𝘁 ❤️<br>
+              • Nvidia thanks for providing benchmarks for LLAMA2 <br>
+              <br>
+              For further GenAI and ML tech discussions or such "weird" findings, reach out to me/follow me<br>
+              <br>
+              #genai #machinelearning #llama
             </span>
           </p>
           <button class="expand-button">Read more</button>
           <button class="collapse-button" style="display: none;">Read less</button>
-          <a class="linkedin-button" href="https://www.linkedin.com/..." target="_blank">LinkedIn Post</a>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-machinelearning-llama-activity-7156292445465419776-li69?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+      
+      
+      
+      
+      <!-- Blogpost 1 -->
+      <li>
+        <div class="blogpost">
+          <div class="blogpost-content">
+            <h3><strong>Post 1: Title of the First Blog Post</strong></h3>
+            <p>Short description of the first blog post.</p>
+          </div>
+          <img src="image1.jpg" alt="Image 1">
+          <div class="blogpost-content">
+            <p class="expandable-text">
+              This is the first sentence of the blog post.
+              <span class="expanded-text">
+                This is the rest of the text that can be expanded. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.
+              </span>
+            </p>
+            <button class="expand-button">Read more</button>
+            <button class="collapse-button" style="display: none;">Read less</button>
+            <a class="linkedin-button" href="https://www.linkedin.com/..." target="_blank">LinkedIn Post</a>
+          </div>
         </div>
       </li>
       
