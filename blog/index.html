@@ -29,7 +29,8 @@
 
     /* Center blogposts and images */
     .blogpost {
-      width: 600px;
+      width: 100%;
+      max-width: 600px;
       margin: 0 auto;
     }
 
@@ -58,6 +59,19 @@
     ul {
       list-style-type: none; /* Remove bullets/numbers */
       padding: 0; /* Remove default padding */
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      .blogpost {
+        width: 100%;
+        padding: 0 10px; /* Add some padding for smaller screens */
+      }
+      
+      .expand-button, .collapse-button, .linkedin-button {
+        font-size: 12px; /* Adjust button font size for smaller screens */
+        padding: 5px 8px;
+      }
     }
   </style>
 </head>
