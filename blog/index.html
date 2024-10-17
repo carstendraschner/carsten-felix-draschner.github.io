@@ -42,6 +42,18 @@
       text-align: left; /* Left-align the text */
     }
 
+    .blogpost-separator {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .blogpost-separator hr {
+      border: 0;
+      height: 1px;
+      background: #ccc;
+      width: 80%;
+    }
+
     /* Remove list styling */
     ul {
       list-style-type: none; /* Remove bullets/numbers */
@@ -66,7 +78,813 @@
   <main>
     <h2>Blog</h2>
     <ul>
-
+      <div class="blogpost-separator"><hr></div>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>How Far Are We Really from Reasoning within GenAI? My Perspective in GPT-o1 times and Possible Ways to Get There 🤖🧠</strong></h3>
+          <p>Exploring the current state of reasoning in GenAI, the challenges faced, and potential approaches to achieving true reasoning capabilities.</p>
+          <img src="images/1728978009753.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Reasoning is key for transforming AI into AGI<br>
+            • Current AI models show significant weaknesses in simple tasks<br>
+            • Optimism about LLMs learning math and reasoning<br>
+            • Proposed method for teaching math skills to LLMs<br>
+            • Questions and call for collaboration<br>
+            <span class="expanded-text">
+              <strong>Reasoning is a Key Ability to Transform AI into AGI</strong><br>
+              • In Reflection AI, reasoning has been unmasked. 🦸🏼‍♂️<br>
+              • OpenAIs GPT-o1 behavior could be reproduced by silent chain-of-thought (CoT) with other models. 🔄<br>
+              • Reasoning is still more of a marketing promise than an actual capability. 📈<br>
+              • For example, we observe significant weaknesses in simple tasks. ⚠️<br>
+              • Simple multiplication is still a challenge for many models. ✖️<br>
+              • As long as these fundamental issues remain unresolved, we are far from achieving true reasoning capabilities. 🚧<br>
+              <br>
+              <strong>Why I Believe LLMs Should Be Able to Learn Math and Reasoning</strong><br>
+              • There are varying opinions on whether reasoning is achievable with current AI. 🤔<br>
+              • I am fundamentally optimistic, although I acknowledge the recent criticisms from Yann LeCun and older from Emily M. Bender. 🦜<br>
+              • I have outlined my vision for reasoning in the comments section. ✍️<br>
+              <br>
+              <strong>How to Teach Math Skills as a First Step</strong><br>
+              • Let's focus on multiplication as a starting point. 🔢<br>
+              • Generate pairs of numbers of different sizes. ✖️<br>
+              • Split the data into training, testing, and validation sets. 📊<br>
+              • Train a language model (LLM) using a tokenizer that only includes numbers 0-9, 'x' for multiplication, and 'EOS' for the end of the sequence. 📝<br>
+              • Evaluate which model size yields the best results on the test set. 🏆<br>
+              <br>
+              <strong>What Do You Think?</strong><br>
+              • Could such an experimental setup help evaluate the computational skills of LLMs/transformer architectures? 🧪<br>
+              • Do you agree that tokens representing individual numbers are crucial for computation, rather than embedding multiple digits like "007" in a single token? 🔍<br>
+              • Have any of you tried something similar, or would you like to collaborate on this research project? 🤝<br>
+              <br>
+              For more content like this, follow me ❤️ If you enjoyed this post, please leave a like 👍 or share your thoughts and ideas in the comments. 💬 Image first seen in a post from Yuntian Deng. Looking forward to discuss this with my lovely colleagues at Comma Soft AG within our next AI-Coffee-Hour 🤓
+              <br>
+              #GenAI #Reasoning #LLM #SimpleMath
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-reasoning-llm-activity-7251859387621814272-DxY6?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Stop adding Languages to LLMs! The Potential Drawbacks of Training Multilingual Large Language Models (LLMs) for Performance and Sustainability!</strong></h3>
+          <p>Exploring the downsides of creating multilingual LLMs and their impact on performance and resource utilization.</p>
+          <img src="images/1727692358797.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Challenges of building multilingual LLMs<br>
+            • Inefficiencies in token usage and context length<br>
+            • Increased hardware costs and reduced token training<br>
+            • Weighing multilingual models against language-specific models<br>
+            <span class="expanded-text">
+              <strong>Building a Multi-Lang-LLM 🛠️🐣</strong><br>
+              • When pretraining LLMs, one of the key decisions is which data to include.<br>
+              • This choice also influences the selection of the tokenizer, which optimizes the number of tokens for the texts used.<br>
+              • As a result, different characters and character sequences are mapped in the tokenizers for each language.<br>
+              <br>
+              <strong>When you finally use such a LLM in only a subset of available languages you face following problems 🇪🇺🤖</strong><br>
+              • Inefficient token usage: If the model is only used for one or two languages, many tokens may be rarely or never needed, leading to shorter token sequences in the required language.<br>
+              • Limited context length: LLMs have a limited context length, measured in tokens, which can result in more expensive inference as the model scales linearly to quadratically with prompt length.<br>
+              • Increased hardware costs: This can lead to higher hardware costs and omissions.<br>
+              • Reduced relevant token training: With a multilingual model, fewer relevant tokens and token sequences may have been seen and trained in the required languages.<br>
+              <br>
+              <strong>The Trade-Off: Multilingual Models vs. Language-Specific Models 💰📊</strong><br>
+              • We need to weigh the benefits of multilingual models against the potential drawbacks and decide whether to prioritize language coverage or risk wasting resources.<br>
+              • This is particularly important when dealing with languages that are not closely related, such as those with different character sets.<br>
+              <br>
+              <strong>Your Opinion 🤗</strong><br>
+              • What do you think?<br>
+              • Have you ever chosen a model especially with reduced number of languages outside English?<br>
+              • Some more details about Multi-Lang-GenAI can be found here: <a href="https://lnkd.in/edgPsdKz" target="_blank">https://lnkd.in/edgPsdKz</a><br>
+              <br>
+              For more content, follow me or reach out to me over DM ❤️<br>
+              <br>
+              #artificialintelligence #genai #llm #languages
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7246524467034689537-nZ-f?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Where Science Meets Innovation: My personal Highlights & Insights into the PG 2024! Do you have answers to the open Questions?</strong></h3>
+          <p>Highlights and open questions from the Petersberger Gespräche (PG) 2024, covering AI, energy transition, chip technologies, and more.</p>
+          <img src="images/1727085847323.jpeg" alt="PG 2024 Highlights">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • AI and consciousness discussions<br>
+            • Energy transition and regulatory challenges<br>
+            • Distributed chip technologies in Europe<br>
+            • Generative AI in media<br>
+            • Metaverse applications beyond gaming<br>
+            <span class="expanded-text">
+              <strong>🧠 AI and Consciousness 🧠</strong><br>
+              Joscha Bach from Liquid AI presented on how advancements in AI could potentially redefine our understanding of consciousness. My open question for him is: How does he intend to reliably measure the achievement of AI consciousness in his efforts?<br>
+              <br>
+              <strong>👩🏻‍🔬 Scientific Chemical Hands on how to fix energy transition 👩🏻‍🔬</strong><br>
+              As chairman of Alexander von Humboldt Foundation, Robert Schlögl delivered an impressively passionate presentation on energy tech for the climate transition and the phasing out of fossil fuels. Besides scientific derivations, he also highlighted significant regulatory issues that hinder successful implementation. I wonder: How these regulations came about, why they are justified if they are (potentially) not scientifically tenable, and how they can now be resolved?<br>
+              <br>
+              <strong>🇪🇺 Efficient Distributed Chip Technologies from the heart of Europe 🇪🇺</strong><br>
+              Christian Mayr from Technische Universität Dresden discussed the potential and developments possible in Dresden. He mentioned the use of clustered chip technologies to operate LLMs. One of my open questions is: How can LLMs be distributed across tens of thousands of chips while still achieving acceptable inferential latencies?<br>
+              <br>
+              <strong>📰 GenAI in Media, Opportunities and Risks 📰</strong><br>
+              In further discussions with Sibylle Anderl from ZEIT Verlagsgruppe, we explored the potentials and risks of Generative AI in text, image, and video generation, and how reducing anonymity could potentially restore credibility. My open question: Whether there is a reliable way to recognize these outputs, given that word frequency alone might not be a proof?<br>
+              <br>
+              <strong>🕹️ Metaverse, not only a Playground? 🕹️</strong><br>
+              Nico Michels from Siemens presented the potentials of the Metaverse and digital twins. Q: I'd love to see how such models can help even small municipalities with climate adaptation models, regional impact assessments, and improvement options?<br>
+              <br>
+              The open questions highlight the stimulating topics the diverse guests who aim to drive positive change with a progressive mindset. I would like to thank Comma Soft AG and everyone involved for organizing this fantastic event, especially Stephan Huthmacher, whose heartfelt dedication makes this recurring, inspiring event possible. ❤️<br>
+              <br>
+              Share your thoughts and impressions, I'll share the streams 🤗<br>
+              <br>
+              Hashtag#artificialintelligence Hashtag#genai Hashtag#sustainability Hashtag#petersbergergespräche
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Today's Research Proposal: How to achieve "real" thinking and reasoning in GenAI, rather than just relying on a silent Chain of Thought, as seen in ReflectionAI or possibly GPT-o1?</strong></h3>
+          <p>Exploring the potential for achieving true reasoning and thinking in Generative AI models beyond the current Chain of Thought methodologies.</p>
+          <img src="images/1726499742573.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Current state of reasoning in models<br>
+            • Possibilities for transformers to learn to think<br>
+            • Customization ideas for achieving true reasoning<br>
+            • Open questions and discussion points<br>
+            <span class="expanded-text">
+              <strong>Currently, reasoning more through silent the CoT 😥</strong><br>
+              • There are currently models that claim to possess reasoning capabilities.<br>
+              • However, this is more about the Chain of Thought and the use of special tokens.<br>
+              • These enable the model to generate more text, thereby increasing the stability of its answers.<br>
+              • This process of "reasoning" is not transparently/barely shown.<br>
+              • I believe this is less about reasoning or thinking and more about statistical stability.<br>
+              • Moreover, it is not possible to observe the reasoning process, and it is often difficult to identify when a model has gone astray.<br>
+              <br>
+              <strong>How could transformers learn to think? 🤯</strong><br>
+              • Why can I still imagine that it is possible to learn to think or reason with the transformer architecture?<br>
+              • Due to the transformer architecture, which includes tokenization, attention, and multi-layer perceptron elements, as well as the universal function approximation hypothesis, the following can be imagined:<br>
+              1️⃣ In early layers, the network learns something akin to named entity recognition.<br>
+              2️⃣ Later layers and embedding dimensions create structures that learn propositional logic and structures similar to knowledge graphs or their embeddings.<br>
+              3️⃣ Finally, based on this, resonating and reflecting completeness of output logic components could be achieved.<br>
+              <br>
+              <strong>What else would I customize? 👨🏼‍💻 (IMHO)</strong><br>
+              I would find it interesting to combine this with thought-diffusion models, making hierarchical planning possible. I have several more ideas..., reach out to me if you like to start a discussion ❤️<br>
+              <br>
+              <strong>Questions:</strong><br>
+              Are you aware of any approaches or research projects that attempt this?<br>
+              What are your thoughts on that, how would you build "AGI" it?<br>
+              <br>
+              I had great idea exchanges on this with colleagues from Comma Soft AG, Lamarr-Institut & Smart Data Analytics.<br>
+              <br>
+              Let's not waste money and time on believing in marketing claims and rebranding of the word "reasoning", but let's start to think of how it could actually be achieved 🤗<br>
+              <br>
+              #AGI #GenAI #artificialintelligence #research
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-sustainability-activity-7243978164564111361-12R6?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Conference Summary - Some of my Highlights and Impressions from the Lamarr AI 24!</strong></h3>
+          <p>An overview of the key highlights and insights gathered from the Lamarr-Institut 24 Conference.</p>
+          <img src="images/1725876824236.jpeg" alt="Conference Image">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Attended Lamarr-Institut 24 Conference<br>
+            • Reconnected with colleagues and made new acquaintances<br>
+            • Insights from various talks on GenAI, LLMs, and AI developments<br>
+            <span class="expanded-text">
+              <strong>Intro 🥰</strong><br>
+              • Together with my great colleague Lukas Pfahler, PhD, we attended the Lamarr-Institut 24 Conference, where research, industry, business, and politics came together.<br>
+              • It was a pleasure to reconnect with many of my companions from the Lamarr-Institut and Rheinische Friedrich-Wilhelms-Universität Bonn and make new acquaintances, gathering new insights and impressions.<br>
+              <br>
+              <strong>My Highlights 💡</strong><br>
+              • I was delighted to see my former PhD supervisor, Jens Lehmann, now Principal Scientist at Amazon AGI and Professor at Technische Universität Dresden, present on how GenAI can be implemented by LLMs and Retrieval-Augmented Generation (RAG) based on Knowledge Graphs to create better retrieval and factual correctness. I'm thrilled to see how my PhD topic and current research and development continue to grow together!<br>
+              • My second PhD supervisor, Stefan Wrobel from the Fraunhofer IAIS, joined with Magnus Sahlgren from AI Sweden showcased the possibilities of LLM developments in Europe and the potential for e.g. OpenGPT-X. I'm eagerly looking forward to the model and hope it will fulfill its promises of performance. It would be excellent to see this competence and open-source claim take root in DE and EU.<br>
+              • Rebecca Nugent Carnegie Mellon University delivered a thought-provoking talk on how we're currently in an AI bubble, with people outside of that bubble having a mix of disinterest, reservations, and concerns on AI that need to be addressed.<br>
+              <br>
+              <strong>Further Highlights in Fast Forward ⏩</strong><br>
+              • Asja Fischer from Ruhr-Universität Bochum provided exciting insights into the cat-and-mouse game of identifying GenAI content.<br>
+              • Milica Gasic from Heinrich-Heine-Universität Düsseldorf explained how to identify uncertainty in LLM predictions (potential hallucination).<br>
+              • Mehdi Ali and Max Lübbering, PhD presented a cool pitch on an open-source framework approach to train LLMs from scratch.<br>
+              • We had a great exchange with David Jurgens from the University of Michigan on the topic of alignment and system prompts.<br>
+              • Sebastian Thrun created a TED-like talk supporting me and others on how to address (Gen)AI advances to a broad audience.<br>
+              • The startup pitch format of the Digital Logistics Award was a pleasure to watch, Great pitches!<br>
+              <br>
+              I'd like to extend my gratitude to Comma Soft AG for supporting us in attending this event. I would like to thank the conference hosts for organizing such a fantastic event. Through the exchange, we've verified that we're focusing on the right approaches within our GenAI approach Alan.de ❤️<br>
+              <br>
+              #ArtificialIntelligence #GenerativeAI #Lamarr #NRW #LLM
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-generativeai-lamarr-activity-7238914800796258306-nijX?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>For more sustainability transparency in GenAI! Share your knowledge and reduce energy waste!</strong></h3>
+          <p>Emphasizing the importance of transparency and shared knowledge to enhance sustainability in GenAI.</p>
+          <img src="images/1725288138494.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • GenAI involves very large models and significant training efforts<br>
+            • Transparency can help share emissions and reduce energy waste<br>
+            • Open source models can optimize future development<br>
+            <span class="expanded-text">
+              <strong>GenAI and Sustainability 🌱</strong><br>
+              • GenAI is implemented through very large models.<br>
+              • The training can be substantial, such as the 15T tokens of LLAMA 3.1.<br>
+              • However, these trainings represent only the final training and not all the attempts that led to the final model.<br>
+              <br>
+              <strong>How Transparency helps 📚</strong><br>
+              • If the models are open or, in the best case, open source, many users and use cases can share the resulting emissions.<br>
+              • It would also be interesting to see how often models are used for inference to compare the relative share of emissions.<br>
+              • Open source would be important to share learnings for the next generation of models and thus reduce emissions by reusing hyperparameter optimizations.<br>
+              Please share your findings and let's use our resources and energy wisely.<br>
+              <br>
+              <strong>Our Paper 📄</strong><br>
+              In our paper “Ethical and Sustainability Considerations for Knowledge Graph based Machine Learning,” we highlight which sustainability and ethical optimizations are possible when working with hardware-intensive Artificial Intelligence approaches. Link: <a href="https://lnkd.in/eJjATkTQ" target="_blank">https://lnkd.in/eJjATkTQ</a><br>
+              <br>
+              What are you doing to bring AI, ethics, and sustainability together? ❤️<br>
+              <br>
+              #artificialintelligence #genai #llm #sustainability #aiethics
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_environmental-impact-of-ai-some-model-activity-7236647589096361986-9rSm?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Sustainable Air-Gapped On-Prem LLM Solution! How can we make GenAI available on almost any hardware, and how is it also available as a portable demo on our Alan Notebook</strong></h3>
+          <p>Exploring the development of a full-stack GenAI LLM solution that can run on a variety of hardware configurations, including a portable demo setup.</p>
+          <img src="images/1724684606019.jpeg" alt="Alan Notebook">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Developing Alan, a full-stack GenAI LLM solution<br>
+            • Hosted on German hyperscaler infrastructure<br>
+            • Offers a smaller version, Alan-S-LLM<br>
+            • Portable demo available on Alan Notebook<br>
+            <span class="expanded-text">
+              <strong>What We're Working on When We Talk About Alan R&D 👨🏼‍💻</strong><br>
+              • In a recent post, I introduced how we're developing Alan, a full-stack GenAI LLM solution.<br>
+              • We host our solution within German hyperscaler infrastructure to deal with the requirements of multiple customer tenants and our large language models, including retrieval augmented generation pipelines.<br>
+              • The requirements of our strongest Alan LLM require current top-notch Nvidia GPUs (Ampere+, 80GB VRAM), but we also offer a smaller Alan-S-LLM, which still has tremendous capabilities with fewer hardware requirements.<br>
+              <br>
+              <strong>How to Shrink LLMs 🤖</strong><br>
+              • Models are smaller in dimensions like the number of transformer layers, heads, hidden dimensions, and other hyperparameters.<br>
+              • Current smaller GenAI LLMs can be designed by model distillation and model pruning, which try to keep model quality high while reducing the number of parameters.<br>
+              • The reduced number of parameters reduces VRAM requirements. Fewer parameters, especially fewer transformer layers, increase the throughput and inference performance as well.<br>
+              • The reduction of bits used to represent each parameter of the LLM reduces the required total GPU VRAM.<br>
+              <br>
+              <strong>Our Alan Demo Notebook 💻</strong><br>
+              • To demonstrate that our entire tech stack is capable of running entirely air-gapped and to showcase that we're truly capable of showing this on even a portable system, we developed the Alan-Notebook.<br>
+              • This notebook uses the entire tech stack, which includes all the components that offer Multi-GPU Cluster setups, handling of users, RAG pipelines, and, of course, LLM text inference.<br>
+              • The model behind is our fastest and most efficient Alan-S-Model. The notebook has limited hardware capabilities, especially within the GPU (16GB, Nvidia), but can still run the entire tech stack.<br>
+              <br>
+              <strong>Further Reading:</strong><br>
+              • LLM Model Sizes: <a href="https://shorturl.at/6ZxMq" target="_blank">https://shorturl.at/6ZxMq</a><br>
+              • Alan - Our Developer Journey: <a href="https://shorturl.at/PqLdE" target="_blank">https://shorturl.at/PqLdE</a><br>
+              • Full details of how infrastructure is scaled down by Dr. Laura Maaßen see <a href="https://lmy.de/eicOw" target="_blank">https://lmy.de/eicOw</a><br>
+              <br>
+              If you're interested in how we develop an entire scalable GenAI solution and you want to see some details into our R&D, follow me on LinkedIn and reach out to us. Thanks to my wonderful teammates Dr. Laura Maaßen and Lars Flöer, who made this Alan Notebook possible, and to the entire Alan Development Team Comma Soft AG for supporting this great project and product.<br>
+              <br>
+              #genai #onprem #llm #alan
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-onprem-llm-activity-7233851548349444097-lF4N?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Combining the Hugging Face Model Platform and Knowledge Graph trend analysis over time could improve GenAI research and reduce waste of energy!</strong></h3>
+          <p>Exploring the potential of leveraging knowledge graphs to analyze trends in evolving models for better GenAI research and efficiency.</p>
+          <img src="images/1723625262465.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Leveraging knowledge graphs for GenAI trends<br>
+            • Identifying high-performing models and best practices<br>
+            • Potential for a crowd-sourced GenAI cookbook<br>
+            <span class="expanded-text">
+              Traversing the possible huge knowledge graph of evolving models... It would be interesting to see trends within this graph, such as which families and architectures are trending 📈. I'd love to explore over time what approaches for fine-tuning, datasets, or even the number of transformer layers/heads, etc. create high-performing and efficient models 🌱. So we could create a crowd-sourced best practice GenAI cookbook ❤️👩🏽‍🍳. Please let me know if you are already working on it Thomas Wolf 🤗
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_have-you-noticed-the-new-model-tree-section-activity-7229418184590737409-UoNB?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>What is the perfect approach to adjust an LLM to your GenAI use case?</strong></h3>
+          <p>Exploring various methods to customize LLMs for specific GenAI use cases, ranging from simple to complex approaches.</p>
+          <img src="images/modeltraining.png" alt="Model Training">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Various ways to customize LLMs for specific use cases<br>
+            • Approaches vary in difficulty and complexity<br>
+            • Pros and cons of different methods<br>
+            • More dimensions to improve GenAI use cases<br>
+            <span class="expanded-text">
+              <strong>Prompt Engineering & In-Context Learning:</strong> Manually enriching the prompt with information to guide the model’s prediction into desired behavior.<br>
+              <br>
+              <strong>Retrieval-Augmented Generation:</strong> Automatically retrieving context that is appended to the prompt on the fly after being retrieved through vector database similarity search and reranking.<br>
+              <br>
+              <strong>Parameter-Efficient Finetuning:</strong> Training only a subset of the model's parameters while keeping others unchanged.<br>
+              <br>
+              <strong>Full Parameter Finetuning:</strong> Training all parameters.<br>
+              <br>
+              These approaches have pros and cons in terms of (and not limited to):<br>
+              • Catastrophic Forgetting<br>
+              • Memory Load<br>
+              • Maximum Context-Size limits<br>
+              • Hallucinations<br>
+              • Response Time<br>
+              <br>
+              There are also more approaches and dimensions to improve GenAI Use Cases like:<br>
+              • Guardrails<br>
+              • Structured output<br>
+              and many more.<br>
+              <br>
+              What are you working on, and which field are you interested in to see how we are working on it?<br>
+              <br>
+              We at Comma Soft AG implement these and more approaches into our own Product Alan.de and support also other GenAI Use Cases through these approaches.<br>
+              <br>
+              Reach out to me 🤗 and follow me for more content ❤️<br>
+              Hashtag#artificialintelligence Hashtag#genai Hashtag#llm
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7228755735776546817-cUi0?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>These results give me hope for sustainable AI 🌱</strong></h3>
+          <p>I'm impressed by some of the recent advances in the field of "small" open-weight Language Models (LLMs).</p>
+          <img src="images/1722508519413.jpeg" alt="Sustainable AI">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Increased documentation supports reproducibility<br>
+            • Data quality improves model performance<br>
+            • Model distillation reduces hardware needs<br>
+            <span class="expanded-text">
+              <strong>More Documentation 📚</strong><br>
+              They're accompanied by increased documentation, as seen with efforts from Apple and Meta, which support reproducibility and reduce wasted effort and energy on less promising pre-training and fine-tuning iterations.<br>
+              <br>
+              <strong>Data Quality as Chance 🔎</strong><br>
+              They demonstrate that a focus on data quality can improve model performance, as evidenced by Phi-3. However, it's also clear that the total number of tokens contributes to improvements, as seen with LLAMA3(.1).<br>
+              <br>
+              <strong>Model Distillation 👩🏽‍🔬</strong><br>
+              Model Distillation has been effective in reducing total hardware requirements and inference time, which saves energy and resources. It will be interesting to see how quickly distilled models like Gemma2 can outperform 6-month-old state-of-the-art models like LLAMA2.<br>
+              <br>
+              I appreciate the efforts to decrease hardware and energy demands while still providing helpful model responses.<br>
+              <br>
+              Hashtag#artificialintelligence Hashtag#genai Hashtag#sustainableai Hashtag#llm
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_ai-google-tech-activity-7224785383237001216-HDyZ?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>      
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>LLMs: Big vs Small. Bigger is Better!? OR Let's not waste energy!?</strong></h3>
+          <p>The AI community is abuzz with debates over the efficacy of large versus small language models. Both have their own merits and limitations.</p>
+          <img src="images/modelsize.png" alt="Model Size">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • AI community debates model sizes<br>
+            • Massive models vs. smaller, efficient models<br>
+            • Insights and future predictions<br>
+            • Links to further reading<br>
+            <span class="expanded-text">
+              <strong>✨ The AI community is buzzing with discussions about model sizes:</strong><br>
+              • Massive models like Mistral (8x22B), LLAMA3 (400B), and Grok (314B) are turning heads.<br>
+              • Smaller yet mighty models like Phi 3, LLAMA3 (8B), and Nemo (12B) are proving their worth.<br>
+              <br>
+              <strong>🔍 Key insights:</strong><br>
+              • Smaller models can compete by focusing on smarter training and pre-tuning methods.<br>
+              • Benchmarks are helpful but not flawless in measuring a model's value.<br>
+              • The mystery remains: why might a model with 61 transformer layers outperform one with 60?<br>
+              • Balancing model architecture is crucial due to the increasing complexity as models scale up.<br>
+              <br>
+              <strong>🔮 Future predictions:</strong><br>
+              • Will we see a standard model size emerge, or will there be a variety for different model size clusters for different platforms (mobile, single GPU, multi-GPU clusters)?<br>
+              <br>
+              <strong>Links 🔗</strong><br>
+              • Reason LLAMA Model Sizes: <a href="https://lnkd.in/dHRSJXgm" target="_blank">https://lnkd.in/dHRSJXgm</a><br>
+              • ALAN - GER-hosted GenAI tool developer story: <a href="https://lnkd.in/ey8aZTjB" target="_blank">https://lnkd.in/ey8aZTjB</a><br>
+              • Problems with benchmarks: <a href="https://lnkd.in/dmBeQZ_j" target="_blank">https://lnkd.in/dmBeQZ_j</a><br>
+              <br>
+              <strong>🌐 What is your experience?</strong><br>
+              • Which model size do you find most practical for real-world problems?<br>
+              <br>
+              <strong>📊 I'm keen to learn from you:</strong><br>
+              • What size models are you working with?<br>
+              • Share your preferences in this survey and let's discuss the optimal balance in model scaling.<br>
+              • What do you think how big is the gpt4o turbo?<br>
+              • Join the conversation and let's navigate the evolving landscape of machine learning together ❤️<br>
+              <br>
+              At Alan (by Comma Soft AG), we recognize the need for variety:<br>
+              We provide models of various sizes to align with your unique requirements for capability and speed.<br>
+              <br>
+              #MachineLearning #AI #ModelSize #Innovation #GenAI #SustainableAI
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_machinelearning-ai-modelsize-activity-7221169255419969536-IQnL?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>The BIGGEST RISK for GenAI? Interesting News from US court... Who owns the training data and which generations must not be generated? Impact of GitHub Copilot under the Digital Millennium Copyright Act (DMCA)</strong></h3>
+          <p>Exploring the legal implications of GenAI, particularly in light of recent US court rulings and the challenges associated with training data and generated content.</p>
+          <img src="images/1721046038993.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Capabilities and applications of GenAI<br>
+            • Debates on the use of training data and distribution of generated content<br>
+            • Legal prohibitions and discussions<br>
+            • Challenges in attribution and data relevance<br>
+            • Recent court rulings and their impact<br>
+            <span class="expanded-text">
+              <strong>GenAI</strong><br>
+              With GenAI we are capable of doing amazing things<br>
+              🎼 We can generate songs to our preferences<br>
+              📝 Have texts written in a certain style<br>
+              🎨 Paint pictures in a certain artistic style<br>
+              🗣️ Synthesize voices according to models<br>
+              <br>
+              <strong>Fields</strong><br>
+              There is currently a big debate about how far:<br>
+              1️⃣ The training data should not have been used<br>
+              2️⃣ To what extent the generated "outcomes" should not be distributed<br>
+              <br>
+              <strong>Rules</strong><br>
+              The following are prohibited or under discussion:<br>
+              • The generation and reproduction of company logos<br>
+              • Works of art may also no longer be created in the specific style of certain modern artists<br>
+              • In the case of voice synthesis, there is a complaint as to whether the voice is too close to that of some popular actress<br>
+              • In the case of text responses, content from paywall-protected news articles was generated without further reference<br>
+              • GitHub code of others is reproduced without mentioning the source license<br>
+              <br>
+              <strong>Challenge</strong><br>
+              Attribution is extremely difficult to impossible with naive transformer LLM architectures. Also, the total amount of data on the Internet is extremely relevant for the model's performance. I am curious to see how it turns out.<br>
+              <br>
+              <strong>Court</strong><br>
+              GitHub Copilot and OpenAI at court: there was a surprising ruling for me in the area of copyright regarding Digital Millennium Copyright Act (DMCA), which might change the field of GenAI 👩🏽‍⚖️<br>
+              <br>
+              <strong>Wondering</strong><br>
+              I also wonder whether writing styles are forbidden:<br>
+              "Write a dialog between two characters talking to each other like Jar Jar Binks and Yoda". Should this be allowed, is writing style like this protectable? 😈<br>
+              <br>
+              What do you think? Where should the copyright limit be? How do you interpret the current landscape of cases in court? Share within the comments 🤗<br>
+              <br>
+              Within our R&D team at Comma Soft AG, we facilitate a tech stack that supports proper referencing of used sources 🤖<br>
+              <br>
+              Join the conversation and follow me for more content ❤️<br>
+              <br>
+              Hashtag#artificialintelligence Hashtag#llm Hashtag#genai Hashtag#copyright Hashtag#risk<br>
+              <br>
+              <a href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-genai-activity-7218870221955043329-wGW0?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-genai-activity-7218870221955043329-wGW0?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>GenAI, what is plagiarism? Its Impact on Science. How should it be handled? What is your perspective?</strong></h3>
+          <p>Discussing the implications of GenAI on scientific work and the thin line between acceptable use and plagiarism.</p>
+          <img src="images/1720445565584.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Use of GenAI in scientific work<br>
+            • Acceptable vs. debatable vs. critical usage<br>
+            • Questions and concerns about plagiarism<br>
+            • The pressure on researchers and students<br>
+            • Opportunities for better research<br>
+            <span class="expanded-text">
+              <strong>Current Situation 🏫</strong><br>
+              However, I see ChatGPT being used in many researchers' work to assist in the creation of (scientific) texts. Often it is also controlled or prohibited by the controlling institutions (schools, universities, paper-venues) to use such tools.<br>
+              <br>
+              <strong>Sample GenAI-LLM usage I think is ok (IMHO) 🤗</strong><br>
+              I wonder how the following behavior in ChatGPT should be dealt with:<br>
+              • You ask Chat GPT if it would correct commas and or capitalization in an existing text as Office Suites do<br>
+              • You ask for rewording from passive to active or better and more varied synonyms such as in Grammarly which is also "GenAI"<br>
+              • You can have texts translated to make quotes more easily accessible in the desired language like DeepL or Google Translate.<br>
+              <br>
+              These are all uses of Chat-GPT that I can imagine in the context of scientific work that was previously possible without "ChatGPT" and, in my opinion, doable with other tools without having to speak of plagiarism.<br>
+              <br>
+              <strong>Debatable usage 🤷🏼‍♂️</strong><br>
+              • You are generating the abstract for your finished paper while correcting and polishing it manually yourself afterwards.<br>
+              <br>
+              <strong>More critical usage 🧐</strong><br>
+              • Write an entire text, paper/exercise/... simply based on a very refined prompt with LLM+RAG+Response-Verification and hand it in as your own work.<br>
+              <br>
+              <strong>My Questions 👨🏼‍🎓</strong><br>
+              I just ask myself how I would have worked if the tools were there or how I would want to deal with these kinds of situations as a lecturer.<br>
+              • What should be allowed?<br>
+              • What goes too far and falls under plagiarism?<br>
+              • Which use of (GenAI) tools needs to be regulated and documented and how finely tuned?<br>
+              • How do you think scientific work, reviews, and publications will change for better or for worse?<br>
+              • Does your institution at least clearly regulate how (GenAI-)Tool usage is possible<br>
+              <br>
+              <strong>Current Problem 🫣</strong><br>
+              I see lots of pressure on students and research scientists to hand in their work or to publish papers. So they are tempted to use available tools. Not every GenAI will imply plagiarism but regulations are not clear as far as I have seen.<br>
+              <br>
+              <strong>The Chance to Research 👨🏼‍🔬</strong><br>
+              We have the chance to use GenAI for better research: acquire good information over RAG and Vector Search, Translate texts into our mother tongue, and Rewrite in shorter or clearer language or even more accessible language.... Chat interact with papers you have questions to....<br>
+              <br>
+              We at Comma Soft AG develop GenAI solutions and also actively using such tools to create great solutions while being aware and careful about possible plagiarism issues.<br>
+              <br>
+              #genai #plagiarism #research #artificialintelligence<br>
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-plagiarism-research-activity-7216090153457463298-37OX?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Adjust GenAI responses towards more ethical behavior possible through system prompts!? Do you trust in such LLM-chat prepended pamphlets?</strong></h3>
+          <p>Exploring the potential and challenges of using system prompts to guide LLM behavior towards ethical outputs.</p>
+          <img src="images/1719951079268.jpeg" alt="Ethical AI">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • GenAI chat interactions often include system prompts<br>
+            • System prompts aim to guide ethical LLM behavior<br>
+            • Challenges exist in ensuring compliance and formulation<br>
+            • Questions on designing and revealing system prompts<br>
+            <span class="expanded-text">
+              <strong>Background 🤓</strong><br>
+              • GenAI is often used via chat<br>
+              • We enter prompts in the Chat UI<br>
+              • Under the hood, the Chat programs usually add a system prompt<br>
+              <br>
+              <strong>System-Prompt 💬</strong><br>
+              • This system prompt should control the behavior of the LLM output<br>
+              • The system prompt complements other behavioral optimizations such as alignment and other guardrails to improve ethical GenAI response<br>
+              • The system prompt can describe behavior such as identity or desired behavior<br>
+              <br>
+              <strong>Problem 🥴</strong><br>
+              • There is no guarantee to what extent the system prompt will be followed<br>
+              • It is unclear what details should be included in the system prompt<br>
+              • It is not possible to prevent the model from revealing the system prompt<br>
+              • It is unclear how best to formulate the system prompt<br>
+              <br>
+              <strong>Questions 🤔</strong><br>
+              • How do you design system prompts, and what are yours?<br>
+              • Do you think system prompts help to ensure the model's behavior?<br>
+              • Do you think chat UIs should not reveal the system prompt and how would you achieve this?<br>
+              <br>
+              <strong>Further Reading 📖</strong><br>
+              • Change Alignment of LLMs: <a href="https://lnkd.in/eWS-VZCD" target="_blank">https://lnkd.in/eWS-VZCD</a><br>
+              • LLM Behavior: <a href="https://lnkd.in/ed52RBNe" target="_blank">https://lnkd.in/ed52RBNe</a><br>
+              • My current LLM Developments: <a href="https://lnkd.in/ey8aZTjB" target="_blank">https://lnkd.in/ey8aZTjB</a><br>
+              <br>
+              We at Comma Soft AG develop GenAI solutions including optimizations of LLM responses through various components where also the design of system prompts plays a role.<br>
+              <br>
+              #artificialintelligence #responsibleai #llm #alan #aiethics
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-responsibleai-llm-activity-7214141563738750976-ywik?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Alternative to GenAI creativity? Watch and try out these fun Evolutionary Algorithms. Problem-solving without GenAI and SGD-based approaches explained!</strong></h3>
+          <p>Exploring Evolutionary Algorithms as an alternative to GenAI for problem-solving, using a fun 2D vehicle race example.</p>
+          <img src="images/evocars.png" alt="Evo Cars">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • There is hype around GenAI and LLMs<br>
+            • Evolutionary Algorithms (EAs) offer an alternative<br>
+            • A fun example of EAs using a 2D vehicle race<br>
+            • Steps involved in EAs explained<br>
+            <span class="expanded-text">
+              <strong>Background ☺️</strong><br>
+              • Within the field of AI is a GenAI and LLM Hype<br>
+              • These are not always the best approach to solve a problem!<br>
+              • There are interesting algorithms optimizing their behavior entirely differently: e.g., Evolutionary Algorithms (EA).<br>
+              • Today I want to show you a fun EA introduction based on a 2D vehicle race "problem"<br>
+              <br>
+              <strong>Evolutionary algorithms (EAs) explained 👨🏼‍🏫</strong><br>
+              <strong>Problem 🏁:</strong><br>
+              • What is the best vehicle configuration to drive over a 2D surface?<br>
+              <br>
+              <strong>Vehicle Configuration = Genome 🧬:</strong><br>
+              • Shape<br>
+              • Wheel size<br>
+              • Wheel position<br>
+              • Wheel weight<br>
+              • Chassis weight<br>
+              <br>
+              <strong>Key EA Steps on the vehicle race example 🔢 :</strong><br>
+              1) Initialization: Generate a set of vehicles with random characteristics (genome) called population<br>
+              2) Fitness Evaluation: Check how far they have got on the randomly generated surface.<br>
+              3) Selection: Select a subset of the best vehicles from the population to reproduce and form the next generation, e.g., by tournament selection or rank selection.<br>
+              4) Crossover (Recombination): Combine the genetic information of two or more selected vehicles to create new offspring. E.g., average two good car genomes or randomly select the information of each...<br>
+              5) Mutation: Randomly modify the genetic information of some individuals in the population to introduce new variations and prevent convergence to a local optimum.<br>
+              5) Replacement: Replace the least performing vehicles with new offspring generated through crossover and mutation.<br>
+              6) Termination: Repeat until a stopping criterion is met: the needed distance, number of iterations, or convergence threshold.<br>
+              7) Output: best vehicle, representing the near-optimal solution<br>
+              <br>
+              <strong>My Perspective 🤗:</strong><br>
+              • Be aware that there are a multitude of possible algorithms to use<br>
+              • We at Comma Soft AG do not trust any hype and select the appropriate algorithms for the respective problem<br>
+              <br>
+              <strong>Credit ❤️</strong><br>
+              • To the development team of the interactive EA vehicle race<br>
+              • I'd also like to thank Hajira Jabeen and Jens Lehmann for their great support in my MT project where I worked on EA and KG for the creation of novel recipes<br>
+              <br>
+              <strong>Links 📖</strong><br>
+              • EA vehicle race, try it out yourself: <a href="https://lnkd.in/e2Ew3e7D" target="_blank">https://lnkd.in/e2Ew3e7D</a><br>
+              • Extract from my MT in a short paper: <a href="https://lnkd.in/e8VRVe_k" target="_blank">https://lnkd.in/e8VRVe_k</a><br>
+              • My current GenAI work: <a href="https://lnkd.in/edNx8uKh" target="_blank">https://lnkd.in/edNx8uKh</a><br>
+              <br>
+              <strong>Questions</strong><br>
+              • How would you solve this "race" problem? EA, GenAI, RL, ...?<br>
+              • Do you want to see more non-GenAI content?<br>
+              • Have you ever used EA to solve a problem?<br>
+              <br>
+              Stay tuned by following me here on Linked ❤️
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-evolutionaryalgorithms-activity-7211741750673973248-V4Ej?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Do we need another GenAI solution? How & why we developed a full-stack GenAI LLM+RAG tool called Alan. A sneak peek at what I am currently working on.</strong></h3>
+          <p>An overview of the motivations and technical aspects behind developing our own GenAI solution, Alan, at Comma Soft AG.</p>
+          <img src="images/alanpdf.png" alt="Alan PDF">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Diverse GenAI solutions exist<br>
+            • Unique motivations for developing our own tool<br>
+            • Technical advantages of our solution<br>
+            • Questions on custom development vs. wrappers<br>
+            <span class="expanded-text">
+              <strong>Current Landscape: 🏞️</strong><br>
+              • There are a variety of GenAI solutions out there<br>
+              • Many models from big tech companies work increasingly well for certain use cases.<br>
+              • And we have launched our own solution. Why?<br>
+              <br>
+              <strong>Our technical perspective: 🤓</strong><br>
+              • Data-Flow-Control: We want to know what happens to our data.<br>
+              • Hosting: We host all our models and data on German servers.<br>
+              • On-Premise: We can run our entire tech stack on-premise without any internet connection<br>
+              • Our-own-Alan-Model: We optimize our models for dedicated use cases through further training (e.g., better language skills in GER)<br>
+              • Knowledge-Enrichment: We decide for ourselves whether we want to make new knowledge available through our novel training approach or through our optimized RAG approach (as you might know there are plenty of options).<br>
+              • Alignment: We have control over the alignment, i.e., to what extent the values and behaviors of the model match our expectations.<br>
+              • SOTA: We always remain state of the art in a fusion of existing open source base models and in-house developments.<br>
+              • Benchmarking: We use benchmarks and measures we trust.<br>
+              <br>
+              With a great team at Comma Soft AG, it's enjoyable to develop such a helpful tool ❤️ In the appended PDF we show an extract of the full text story of our ALAN development journey 📖<br>
+              <br>
+              <strong>Questions: 🤔</strong><br>
+              • How did you decide if you want to develop something yourself or use more kind of wrappers?<br>
+              • How important is the management of sensitive data for you and where are your servers located?<br>
+              <br>
+              <strong>Literature: 📚</strong><br>
+              • Here is the full Humboldt Travel Report with more background stories: <a href="https://lnkd.in/emwvpQsW" target="_blank">https://lnkd.in/emwvpQsW</a><br>
+              • Adjusting Model Alignment <a href="https://lnkd.in/eWS-VZCD" target="_blank">https://lnkd.in/eWS-VZCD</a><br>
+              • Model Selection <a href="https://lnkd.in/duGzWugD" target="_blank">https://lnkd.in/duGzWugD</a><br>
+              • Model Benchmarking <a href="https://lnkd.in/dmBeQZ_j" target="_blank">https://lnkd.in/dmBeQZ_j</a><br>
+              <br>
+              For more GenAI LLM content and R&D discussions, follow me on LinkedIn. If you want to try out Alan, reach out to me: <a href="http://alan.de" target="_blank">http://alan.de</a><br>
+              <br>
+              #artificialintelligence #llm #machinelearning #handson #genai
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_humboldt-travel-report-alan-llm-genai-activity-7208854388101005312-Xr_o?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Will we reach AGI, and if so, by transformers-based architectures? Share your perspective!</strong></h3>
+          <p>Exploring the potential of transformers-based architectures in achieving Artificial General Intelligence (AGI) and the ongoing debate surrounding it.</p>
+          <img src="images/agitarget.png" alt="AGI Target">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • GenAI's impact on AGI discussions<br>
+            • Technical challenges with transformer-based architectures<br>
+            • Optimistic yet cautious approach at Comma Soft AG<br>
+            <span class="expanded-text">
+              <strong>Why GenAI boosted the discussions around AGI! 🤯</strong><br>
+              • Several institutions are claiming that our GenAI-based architectures are a key step on our way to AGI.<br>
+              • On the other hand, we are facing major technical issues with those systems that seem to not allow AGI by design: see stochastic parrots.<br>
+              • But still, some, like Ilya Sutskever claim that transformer-architecture AIs can reach AGI-like capabilities as it does not only learn next token prediction, it learns a projection space for real-world understanding.<br>
+              <br>
+              <strong>Further links 📖</strong><br>
+              • Critics on GenAI/LLMs: <a href="https://lnkd.in/e2JqstpW" target="_blank">https://lnkd.in/e2JqstpW</a><br>
+              • Ilya (OpenAI) Interview: <a href="https://lnkd.in/etu4EKQT" target="_blank">https://lnkd.in/etu4EKQT</a><br>
+              <br>
+              We at Comma Soft AG are developing GenAI models being optimistic about the opportunities and seeing that GenAI is already helping in our tools and pipelines while being aware of all the current issues by design of these approaches (e.g., LLM hallucination) we are actively tackling.<br>
+              <br>
+              Share your perspective in the comments 🤗<br>
+              For more content, follow me on LinkedIn ❤️
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B6%F0%9D%97%B9%F0%9D%97%B9-%F0%9D%98%84%F0%9D%97%B2-%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%94%F0%9D%97%9A%F0%9D%97%9C-%F0%9D%97%AE%F0%9D%97%BB%F0%9D%97%B1-%F0%9D%97%B6%F0%9D%97%B3-activity-7206295399521730561-YPNs?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
+      <li>
+        <div class="blogpost">
+          <h3><strong>Do you differentiate AI Ethics principles between AI/ML fields like GenAI/LLMs or Knowledge Graph-based ML? How do we deal with so-called facts on the internet as training data?</strong></h3>
+          <p>Exploring the nuances of AI ethics across different AI/ML fields and handling internet-based training data responsibly.</p>
+          <img src="images/1717514744002.jpeg" alt="Ethics in AI">
+          <p class="expandable-text">
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • AI ethics principles across different AI/ML fields<br>
+            • Personal background and perspective on AI ethics<br>
+            • Recommendations and further reading on AI ethics<br>
+            • Questions to ponder on AI ethics practices<br>
+            <span class="expanded-text">
+              <strong>My Background and Perspective 👶</strong><br>
+              • AI ethics is always the same. No matter if GenAI, Computer Vision, or Knowledge Graph-based ML!<br>
+              • In recent years, I had three main focus areas in the field of AI: My Ph.D. passion in Knowledge Graph-based Machine Learning, before a focus on computer vision, and most recently GenAI with a focus on text<br>
+              • It was always important for me to take a holistic approach. This includes ethical and sustainability aspects in particular.<br>
+              • In our paper on Ethical and Sustainability Implications for Knowledge Graph-based Machine Learning, we have elaborated on topics I also recently found in the literature on LLM AI Ethics [1,2].<br>
+              • I see a chance that AI areas majorly align in the AI Ethics dimensions, so we can easily learn from each other and share best practices<br>
+              <br>
+              <strong>Recommendation 👍🏽</strong><br>
+              • At this point, I recommend a well-known but still very valid paper as an introduction to LLM ethics for those who may not yet know it or are new to the field: On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, Shmargaret Shmitchell [1]<br>
+              <br>
+              <strong>Further Reading 📖</strong><br>
+              [1] On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? <a href="https://lnkd.in/eGt_UYci" target="_blank">https://lnkd.in/eGt_UYci</a><br>
+              [2] Ethical and Sustainability Considerations for Knowledge Graph-based Machine Learning <a href="https://lnkd.in/eJjATkTQ" target="_blank">https://lnkd.in/eJjATkTQ</a><br>
+              <br>
+              I hope that all those who develop such powerful tools are aware of their responsibility, especially in the context of dual-use, to use their skills in a reflective manner.<br>
+              <br>
+              <strong>What is your perspective? 🤔</strong><br>
+              • Do you see differences in the overarching AI Ethics depending on the AI field?<br>
+              • What are your preferred AI Ethics Survey Papers?<br>
+              • Where do you consider AI Ethics in your daily R&D AI work?<br>
+              • What real issues could arise in ML models through the Wikipedia Chuck Norris fact (see image)?<br>
+              <br>
+              I appreciate having a GenAI R&D team Comma Soft AG that is aware of the AI ethical implications of our work.<br>
+              For more content, follow me on LinkedIn or reach out to me over PM ❤️<br>
+              <br>
+              #AIethics #artificialintelligence #llm #genai #knowledgegraphs
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_aiethics-artificialintelligence-llm-activity-7203778968548720643-SZNh?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>What expectations do you have regarding the values and norms of your GenAI chat assistants? Highly sensitive topic in the LLM space! My take...</strong></h3>
@@ -113,8 +931,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B2%F0%9D%98%85%F0%9D%97%BD%F0%9D%97%B2%F0%9D%97%B0%F0%9D%98%81%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B6%F0%9D%97%BC%F0%9D%97%BB%F0%9D%98%80-%F0%9D%97%B1%F0%9D%97%BC-%F0%9D%98%86-activity-7196804101395939328-7ck-?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Be careful when you speak of Open (Source) GenAI. Why OpenAI and Meta (shouldn't) use the word Open within their GenAI efforts?</strong></h3>
@@ -161,8 +978,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-llm-opensource-activity-7193667647274668033-1akX?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Thanks to the Open Source Community for all their efforts! Greetings from PyCon 2024</strong></h3>
@@ -202,8 +1018,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_pycon-pycon-pycon-activity-7188549430604636162-2rHg?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Who will take care of truly low-resource languages? A good step towards more fair GenAI LLM pricing at OpenAI for Japanese-using people!</strong></h3>
@@ -263,8 +1078,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-llm-activity-7186662551923884032-mz7m?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>What is your preferred LLM family? And do you start with an already finetuned LLM? Why you have chosen this LLM? I love to hear your perspective!</strong></h3>
@@ -302,8 +1116,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%AA%F0%9D%97%B5%F0%9D%97%AE%F0%9D%98%81-%F0%9D%97%B6%F0%9D%98%80-%F0%9D%98%86%F0%9D%97%BC%F0%9D%98%82%F0%9D%97%BF-%F0%9D%97%BD%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B3%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%B1-activity-7178654584138067968-rehP?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>NVIDIA Benchmark might be WRONG cause it states: You lose money AND LLM inference speed if you add more NVIDIA A100. This NVIDIA Benchmark is NOT reliable.</strong></h3>
@@ -365,8 +1178,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A1%F0%9D%97%A9%F0%9D%97%9C%F0%9D%97%97%F0%9D%97%9C%F0%9D%97%94-%F0%9D%97%95%F0%9D%97%B2%F0%9D%97%BB%F0%9D%97%B0%F0%9D%97%B5%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BF%F0%9D%97%B8-%F0%9D%97%BA%F0%9D%97%B6%F0%9D%97%B4%F0%9D%97%B5%F0%9D%98%81-activity-7176105937240231936-KzN2?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Too many LLMs?! How to keep track with all the Open Source Models? Identify the finetuned-masked LLMs and its position within the GenAI landscape!</strong></h3>
@@ -426,35 +1238,39 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A7%F0%9D%97%BC%F0%9D%97%BC-%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%86-%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A0%F0%9D%98%80-%F0%9D%97%9B%F0%9D%97%BC-%F0%9D%98%81%F0%9D%97%BC-%F0%9D%97%B8-activity-7173581553552318464-6w1Z?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
-      
-
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Be careful when you are using LLAMA-2! Legal risks & Sustainability Implications due to LLAMA-2 is (NOT) Open Source.</strong></h3>
           <p>Important considerations regarding LLAMA-2's legal and sustainability implications.</p>
           <img src="images/1709552210761-2.jpeg" alt="Image 1">
           <p class="expandable-text">
-            𝗪𝗵𝗮𝘁 𝗶𝘀 𝗟𝗟𝗔𝗠𝗔-𝟮? 🦙<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • LLAMA-2's legal and sustainability challenges<br>
+            • Not truly open-source according to OSD<br>
+            • Technical implications of its license<br>
+            • Meta's restrictions and their broader impact<br>
             <span class="expanded-text">
+              <strong>What is LLAMA-2? 🦙</strong><br>
               • LLAMA 2 is a Large Language Model by Meta<br>
               • Thanks to Meta its weights are openly available over e.g. Hugging Face<br>
               • Meta claims to provide LLAMAs as open-source Models<br>
               • LLAMA-2 is under the LLAMA license which has some restrictions [1]<br>
               <br>
-              𝗪𝗵𝘆 𝗶𝘀 𝗟𝗟𝗔𝗠𝗔 𝗡𝗢𝗧 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲? [2] ❌<br>
+              <strong>Why is LLAMA NOT Open Source? [2] ❌</strong><br>
               • Open Source means software under a license aligned with Open Source Definition (OSD)<br>
               • This includes no discrimination against persons or groups or fields of endeavor (OSD points 5 and 6)<br>
               • Meta’s license puts restrictions for commercial use (paragraph 2)<br>
               • Meta also restricts the use of the model and software for certain purposes (the Acceptable Use Policy)<br>
               <br>
-              𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗜𝗺𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀! 👨🏼‍💻<br>
+              <strong>Technical Implications! 👨🏼‍💻</strong><br>
               IMHO, From a technical perspective the license statement $1V is another major challenge: “You will not use the Llama Materials or any output or results of the Llama Materials to improve any other large language model (excluding Llama 2 or derivative works thereof)”. I interpret this as a barrier if you use this model in combination with other LLMs in workflows like:<br>
               • AI as a judge in benchmark or evaluation pipelines<br>
               • Reinforcement Learning with AI Feedback - RLAIF<br>
               • Data Synthesis pipelines<br>
               • Model Distillation<br>
               <br>
-              𝗠𝗲𝘁𝗮 𝗰𝗿𝗲𝗮𝘁𝗲𝘀 𝗶𝘀𝘀𝘂𝗲𝘀 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 “𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲” 𝗟𝗟𝗔𝗠𝗔-𝟮 😢<br>
+              <strong>Meta creates issues with the “open source” LLAMA-2 😢</strong><br>
               • We will not reach true democratization of LLM application when usage is limited like this<br>
               • Those licenses can create confusion about what is open source in general, what is truly allowed, and what is not with those LLMs<br>
               • If we can barely reuse those pre-tuned LLMs we waste a lot of energy/resources spent on pretraining on more or less the same internet text corpus. 🌱<br>
@@ -464,7 +1280,7 @@
               <br>
               What do you think about Meta's LLAMA-2 license? Will they change it in LLAMA-3? And what implications do you derive from this license?<br>
               <br>
-              Reading list 📖<br>
+              <strong>Reading list 📖</strong><br>
               [1] <a href="https://lnkd.in/e9bM43p9" target="_blank">LLAMA-2 License</a><br>
               [2] <a href="https://shorturl.at/jmow3" target="_blank">Meta’s LLaMa 2 license is not Open Source</a><br>
               [3] <a href="https://shorturl.at/nwzHW" target="_blank">Weird LLAMA benchmark</a><br>
@@ -477,30 +1293,35 @@
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-llm-activity-7170381681563021312-_A5j?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>The major players in GenAI are facing challenges with their Generative AIs. GenAI capabilities and security issues related to LLMs Tools • 37C3 Presentation</strong></h3>
           <p>Challenges and security issues in GenAI and LLMs, highlighted at 37C3.</p>
           <img src="images/1708966127693.jpeg" alt="Image 1">
           <p class="expandable-text">
-            Introduction 📖<br>
-            GenAI has immense capabilities and can support a variety of processes. As developers, we have the responsibility to build ethical and secure GenAI pipelines. A noteworthy but easily overlooked presentation at the 37C3 event highlighted how tools from leading companies like OpenAI, Microsoft, and Google have been exploited though "Indirect Prompt Injections".<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • GenAI has immense capabilities<br>
+            • Ethical and secure GenAI pipelines are crucial<br>
+            • 37C3 presentation on security issues and exploitations<br>
+            • Categories of threats and challenges in GenAI<br>
             <span class="expanded-text">
-              Threat Categories ⚠️<br>
-              • Model Issues: Bias, offensive/dangerous responses, hallucinations, backdoored models. <br>
-              • User as the attacker: Direct Prompt Injection, Print/Overwrite System Instructions Do-Anything-Now, Denial of Service. <br>
+              <strong>Introduction 📖</strong><br>
+              GenAI has immense capabilities and can support a variety of processes. As developers, we have the responsibility to build ethical and secure GenAI pipelines. A noteworthy but easily overlooked presentation at the 37C3 event highlighted how tools from leading companies like OpenAI, Microsoft, and Google have been exploited through "Indirect Prompt Injections".<br>
+              <br>
+              <strong>Threat Categories ⚠️</strong><br>
+              • Model Issues: Bias, offensive/dangerous responses, hallucinations, backdoored models.<br>
+              • User as the attacker: Direct Prompt Injection, Print/Overwrite System Instructions Do-Anything-Now, Denial of Service.<br>
               • Indirect Prompt Injections: AI Injection, Scams, Data Exfiltration, Plugin Request Forgery.<br>
               <br>
-              Challenges 💪🏼<br>
+              <strong>Challenges 💪🏼</strong><br>
               The development of security and safeguards for GenAI is still a "work in progress" and consists of various components 👮🏼<br>
               • Alignment is a fine-tuning approach aimed at training model behaviors to respond securely to critical prompts. Learn more here: <a href="https://lnkd.in/eWS-VZCD" target="_blank">https://lnkd.in/eWS-VZCD</a><br>
               • In Image GenAI, for instance, you can use a post-processing content filter. Check out this peculiar content filter behavior here: <a href="https://lnkd.in/eRaX9JuT" target="_blank">https://lnkd.in/eRaX9JuT</a><br>
               • An interesting set of additional threats and potential countermeasures were recently presented at the 37C3 event, focusing on Indirect Prompt Injections.<br>
               <br>
-              Credits & Links ❤️<br>
+              <strong>Credits & Links ❤️</strong><br>
               • If you're interested in this topic, especially Indirect Prompt Injections, I highly recommend the 37C3 presentation. Watch the video on YouTube: <a href="https://lnkd.in/enjMee6S" target="_blank">https://lnkd.in/enjMee6S</a><br>
               • A huge thanks to everyone supporting the security of these GenAI tools and for their tireless efforts in educating and presenting their findings for free. Special thanks to Johann Rehberger<br>
               • As part of an exceptional team at @Comma Soft AG, we're developing pipelines with a holistic perspective on GenAI.<br>
@@ -512,92 +1333,115 @@
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-llm-aisecurity-activity-7167923469148475392-plqf?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
           <h3><strong>Not prompting in English?... You have Problems!! LLM Language Barriers • Democratizing GenAI and fair pricing</strong></h3>
-          <p>Discussing the language barriers and pricing issues in Generative AI.</p>
+          <p>Exploring the challenges of using Generative AI with languages other than English and the implications for cost and performance.</p>
           <img src="images/1708345591968-4.jpeg" alt="Image 1">
           <p class="expandable-text">
-            <strong>TL;DR:</strong><br>
-            • Language barriers in LLMs cause higher costs for non-English prompts.<br>
-            • Non-English users may get poorer results due to less pretraining data.<br>
-            • Ensuring generative AI benefits everyone is crucial.<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Tokenizers and their role in LLMs<br>
+            • Challenges of non-English prompts<br>
+            • Efficiency and fairness in GenAI<br>
+            • Recommendations for LLM pipelines<br>
             <span class="expanded-text">
-              Tokenizer ✂️<br>
+              <strong>Tokenizer ✂️</strong><br>
               • Generative AI Large Language Models process tokens<br>
               • Tokenizers are a preprocessing step of LLMs and cut prompts into subwords called tokens<br>
               • Tokenizers are optimized to efficiently compress text into a limited number of tokens<br>
               • Tokenizers are optimized based on large text corpora<br>
-              • LLM pipeline hardware load grows based on the number of tokens<br>
+              • LLM pipeline hardware load grows based on number of tokens<br>
               • OpenAI GPT API charges per token<br>
               <br>
-              My findings & my takes 😰<br>
-              • You do not prompt in English... You have Problems!...<br>
+              <strong>My findings & my takes 😰</strong><br>
+              • You do not prompt in English... You have Problems!<br>
               • You have to pay more if you are communicating in a language other than English as the tokenizer creates more tokens (see image)<br>
               • You'll likely get worse results from LLMs since they haven't seen as much text in your target language during pretraining<br>
-              • You can fit less non-English text into an LLM, which has limited context length, meaning you can't solve similarly complex tasks with the same LLM<br>
+              • You can fit less non-English text into an LLM, which has limited context length, meaning you can't solve similarly complex tasks with same LLM<br>
               • Using LLMs in German I am still quite lucky since German is reasonably well represented in most training data corpora and due to the relative similarity between German and English the difference in token decompositions is less pronounced. However, there are many languages (in particular those not using the Latin alphabet) for which the effects are much larger.<br>
               <br>
-              IMHO 🤗<br>
+              <strong>IMHO 🤗</strong><br>
               • We will gather extraordinary efficiency gains through generative AI but we need to be careful that these gains are available to truly all people including those not using GenAI in English<br>
               • If you are building your own LLM pipeline as we do at Comma Soft AG, check out how the tokenizer and language model interact with your language. This might affect the costs or max context length of your text<br>
-              • As the pricing per token is based on the technical costs to process a certain text, I can understand it from that perspective… But it is unpleasant as you pay more for the same prompt while likely getting worse results and having more limitations in prompt complexity e.g. when
-      
-      
-
+              • As the pricing per token is based on the technical costs to process a certain text, I can understand it from that perspective… But it is unpleasant as you pay more for the same prompt while likely getting worse results and having more limitations in prompt complexity e.g. when using RAG insertions<br>
+              • Possibly LLMaaS could provide differently trained LLMs focused on regions and languages yielding better tokenizers and performance for lower resource languages<br>
+              <br>
+              <strong>Related Topics 📚</strong><br>
+              1. Who should decide about alignment? especially when we speak about regional LLMs: <a href="https://shorturl.at/dwGIQ" target="_blank">https://shorturl.at/dwGIQ</a><br>
+              2. What is fair pricing for content-filtered GenAI results: <a href="https://shorturl.at/aCF16" target="_blank">https://shorturl.at/aCF16</a><br>
+              3. What is the best LLM for you: <a href="https://shorturl.at/bmuP8" target="_blank">https://shorturl.at/bmuP8</a><br>
+              4. Try out Open AI tokenizer: <a href="https://lnkd.in/eKhrP7qi" target="_blank">https://lnkd.in/eKhrP7qi</a><br>
+              <br>
+              Hashtag#generativeai Hashtag#artificialintelligence Hashtag#machinelearning Hashtag#aiethics<br>
+              <br>
+              For more content, brainstorming, and discussions, follow me or reach out to me ❤️
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genrativeai-artificialintelligence-machinelearning-activity-7165320754878730242-CICO?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
-          <h3><strong>𝗘𝘃𝗲𝗿 𝘄𝗼𝗻𝗱𝗲𝗿𝗲𝗱 𝗮𝗯𝗼𝘂𝘁 𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲 𝗟𝗟𝗠 𝘀𝗶𝘇𝗲𝘀: 𝟳𝗕, 𝟭𝟯𝗕 , 𝟳𝟬𝗕?</strong></h3>
-          <p>𝗪𝗵𝗲𝗿𝗲 𝗱𝗼 𝘁𝗵𝗼𝘀𝗲 𝗺𝗼𝗱𝗲𝗹 𝘀𝗶𝘇𝗲𝘀 𝗰𝗼𝗺𝗲 𝗳𝗿𝗼𝗺?... 𝗠𝘆 𝗳𝗶𝗻𝗱𝗶𝗻𝗴𝘀!</p>
+          <h3><strong>Ever wondered about open source LLM sizes: 7B, 13B, 70B?</strong></h3>
+          <p>Where do those model sizes come from?... My findings!</p>
           <img src="images/1707838124577-3.jpeg" alt="Image 1">
           <p class="expandable-text">
-            𝗕𝗮𝗰𝗸𝗴𝗿𝗼𝘂𝗻𝗱 📝<br>
-            • As an alternative to AIaaS like ChatGPT, you can interact with LLMs based on open-source models<br>
-            • A good source for open-source models is the Hugging Face model library.<br>
-            • Many models are finetuned variants of existing models like the Meta LLAMA-2 is available as 7B, 13B, 70B.<br>
-            • Inference runs faster on GPUs like NVIDIA V/A/H100.<br>
-            • Bigger models: slower inference & have higher (environmental) costs while bigger LLMs mostly outperform smaller models in benchmark-tasks.<br>
-            • Within multiple use cases, I select the best fitting OS model at @Comma Soft AG use cases.<br>
-            • Different use cases request different model capabilities including model “knowledge” or inference speed.<br>
-            • I was wondering why many models follow the parameter “step sizes” 7B, 13B, and 70B.<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Open-source LLM alternatives to AIaaS<br>
+            • Hugging Face as a source for open-source models<br>
+            • Many models are finetuned variants<br>
+            • Bigger models imply slower inference & higher costs<br>
+            • Different use cases require different model capabilities<br>
+            • Questioning the parameter step sizes of models<br>
             <span class="expanded-text">
-              𝗠𝘆 𝗙𝗶𝗻𝗱𝗶𝗻𝗴𝘀 🔍<br>
+              <strong>Background 📝</strong><br>
+              • As an alternative to AIaaS like ChatGPT, you can interact with LLMs based on open-source models<br>
+              • A good source for open-source models is the Hugging Face model library.<br>
+              • Many models are finetuned variants of existing models like the Meta LLAMA-2 is available as 7B, 13B, 70B.<br>
+              • Inference runs faster on GPUs like NVIDIA V/A/H100.<br>
+              • Bigger models: slower inference & have higher (environmental) costs while bigger LLMs mostly outperform smaller models in benchmark-tasks.<br>
+              • Within multiple use cases, I select the best fitting OS model at @Comma Soft AG use cases.<br>
+              • Different use cases request different model capabilities including model “knowledge” or inference speed.<br>
+              • I was wondering why many models follow the parameter “step sizes” 7B, 13B, and 70B.<br>
+              <br>
+              <strong>My Findings 🔍</strong><br>
               • Many models are finetuned versions of LLAMA-2 as this was a high-performing open-source LLM available within a “mostly” attractive OS license.<br>
               • In most cases, model finetuning does not change the number of parameters.<br>
-              • LLAMA paper states it provides LLMs: [...] "that achieve the best possible per- formance at various inference budgets" [...]<br>
+              • LLAMA paper states it provides LLMs: [...] "that achieve the best possible performance at various inference budgets" [...]<br>
               • Common hardware is 16GB or 80GB of VRAM. Usually, you have one or two of those GPUs within a system.<br>
               • Models are by default available as 16bit representation which leads to 2byte per parameter.<br>
               • To run a model, you need space for parameters and a bit remaining for your batch. So 7B fits on 1x 16GB GPU, 13B fits on 2x 16GB GPUs, (the Lab-leaked LLAMA-1 with 35B fits on 1x 80GB GPU) and the 70B LLAMA-2 model runs on 2x 80GB GPUs.<br>
               <br>
-              𝗜𝗠𝗛𝗢 🤗<br>
+              <strong>IMHO 🤗</strong><br>
               • I am looking forward to how 4bit quantization like GPTQ or AWQ changes the model sizes as you might also fit a roughly 145B quantized model on a single A100 with 80GB.<br>
               • Some use cases might need fewer model parameters but bigger batches, longer max context length, or faster inference which means fewer parameters or fewer deep networks.<br>
-              • Consider smaller models especially cause of the environmental costs if performance is sufficient.<br>
+              • Consider smaller models especially because of the environmental costs if performance is sufficient.<br>
               • I am wondering if there is a true reason for how the parameters are combined within the architecture, the numbers partially feel randomly picked like 80 transformer layers for LLAMA-2 70B vs 40 of 13B version.<br>
               <br>
-              𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 🤔<br>
+              <strong>Questions 🤔</strong><br>
               • What is your preferred model(-family)?<br>
               • Do you use your models as plain or quantized versions?<br>
               • Do you think the model architectures of finetuned context window, hidden size, intermediate size, number heads, and transformer layers are well chosen that build the total needed VRAM volume?<br>
               <br>
               Follow me for more content ❤️<br>
               <br>
-              #artificialintelligence #genai #maschinelearning #llm
+              #artificialintelligence #genai #machinelearning #llm
             </span>
           </p>
           <button class="expand-button">Read more</button>
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-genai-maschinelearning-activity-7163192285034172416-AItW?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
-          <h3><strong>𝗪𝗲’𝘃𝗲 𝗯𝗲𝗮𝘁𝗲𝗻 𝗚𝗣𝗧𝟰! … 𝗶𝘀 𝗮 𝘀𝗲𝗻𝘁𝗲𝗻𝗰𝗲 𝘄𝗵𝗶𝗰𝗵 𝘀𝘁𝗮𝗿𝘁𝘀 𝘁𝗼 𝗮𝗻𝗻𝗼𝘆 𝗺𝗲. 𝗔𝗯𝗼𝘂𝘁 𝗠𝗶𝘀𝘁𝗿𝘂𝘀𝘁 𝗶𝗻 𝗟𝗟𝗠 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻.</strong></h3>
+          <h3><strong>We've beaten GPT4! … is a sentence which starts to annoy me. About Mistrust in LLM Evaluation.</strong></h3>
           <p>Benchmark contamination in LLMs? How to evaluate GenAI?!</p>
           <img src="images/1707147429256-3.jpeg" alt="Image 1">
           <p class="expandable-text">
@@ -607,37 +1451,37 @@
             • Benchmark Contamination is a serious issue <br>
             • Build your own use case specific benchmarks<br>
             <span class="expanded-text">
-              𝗪𝗵𝘆 𝗱𝗼 𝘄𝗲 𝗻𝗲𝗲𝗱 𝗟𝗟𝗠 𝗯𝗲𝗻𝗰𝗵𝗺𝗮𝗿𝗸𝘀? 📊<br>
-              • Many use cases can be solved by GenAI more specifically by LLMs <br>
-              • Many LLMs are available as AIaaS or as an open-source model <br>
-              • At some point, you need to select a specific model for your dedicated use case <br>
+              <strong>Why do we need LLM benchmarks? 📊</strong><br>
+              • Many use cases can be solved by GenAI more specifically by LLMs<br>
+              • Many LLMs are available as AIaaS or as an open-source model<br>
+              • At some point, you need to select a specific model for your dedicated use case<br>
               • News is flooded by a multitude of models that are better than some reference LLM like OpenAIs GPT4<br>
               <br>
-              𝗪𝗵𝘆 𝗶𝘀 𝗟𝗟𝗠 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗱𝗶𝗳𝗳𝗶𝗰𝘂𝗹𝘁? 👩🏽‍🔬<br>
+              <strong>Why is LLM Evaluation difficult? 👩🏽‍🔬</strong><br>
               • When we speak about leaderboards and benchmarks, we look into specific types of tasks.<br>
               • Those tasks need to be “easily measurable” as LLM might generate arbitrary texts.<br>
               • e.g. MMLU is simply a multiple choice and looks if first generated character is A-E.<br>
               • Other Benchmarks use e.g. another LLM as judge (which is expensive) and also fuzzy.<br>
-              • 𝗜𝘁 𝗶𝘀 𝗮𝗹𝗺𝗼𝘀𝘁 𝗶𝗺𝗽𝗼𝘀𝘀𝗶𝗯𝗹𝗲 𝘁𝗼 𝗺𝗲𝗮𝘀𝘂𝗿𝗲 𝗶𝗳 𝗮𝗻 𝗟𝗟𝗠 𝗹𝗲𝗮𝗿𝗻𝗲𝗱 𝘁𝗵𝗲 𝗯𝗲𝗻𝗰𝗵𝗺𝗮𝗿𝗸 𝗱𝗮𝘁𝗮 𝗯𝘆 𝗵𝗲𝗮𝗿𝘁 𝗶𝗻 𝗶𝘁𝘀 𝗽𝗿𝗲𝘁𝘂𝗻𝗶𝗻𝗴/𝗳𝗶𝗻𝗲𝘁𝘂𝗻𝗶𝗻𝗴 𝘀𝘁𝗮𝗴𝗲 𝘁𝗼 𝗴𝗲𝘁 𝗼𝗻 𝘁𝗼𝗽 𝗼𝗳 𝘁𝗵𝗲 𝗹𝗲𝗮𝗱𝗲𝗿𝗯𝗼𝗮𝗿𝗱.<br>
+              • It is almost impossible to measure if an LLM learned the benchmark data by heart in its pretuning/finetuning stage to get on top of the leaderboard.<br>
               <br>
-              𝗠𝘆 𝗧𝗮𝗸𝗲𝘀 🔍<br>
+              <strong>My Takes 🔍</strong><br>
               • Leaderboards are only a starting point for model selection.<br>
               • GenAI approach selection is a multidimensional problem.<br>
               • Develop a use-case-specific evaluation framework e.g. does the generated code run/match unit tests, is secure and fast<br>
               • For most of my use cases I barely care if the model can solve English multiple choice questions by simply evaluating if the first character is an A, B, C, D, or E like in MMLU.<br>
               • Already simple throughput benchmarks seem to have their issues. see: <a href="https://rb.gy/5l8qqp" target="_blank">https://rb.gy/5l8qqp</a><br>
               <br>
-              𝗘𝘅𝘁𝗿𝗮𝗰𝘁 𝗼𝗳 𝗺𝘆 𝗵𝗮𝗻𝗱𝘀-𝗼𝗻 𝗰𝗿𝗶𝘁𝗲𝗿𝗶𝗮 👨🏼‍💻<br>
+              <strong>Extract of my hands-on criteria 👨🏼‍💻</strong><br>
               • Under which license is the model available and does the license allow my intended usage?<br>
               • What do we know about retuning especially regarding: multi-language support, instruction tuning, alignment, and context length?<br>
               • What hardware requirements/costs do we face, and which throughput can we provide? e.g. 13B vs 8x7B vs 70B ...<br>
               <br>
-              𝗖𝗿𝗲𝗱𝗶𝘁 ❤️<br>
+              <strong>Credit ❤️</strong><br>
               • To Hugging Face and other platforms for providing LLM Leaderboards and easily accessible models<br>
               • To OpenAI with its GPT-4 as reference established to be beaten<br>
               • To all benchmark creators and researchers supporting transparent and reliable GenAI evaluation<br>
               <br>
-              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 ?<br>
+              <strong>My Questions ?</strong><br>
               • What are the criteria you look at?<br>
               • What are the best benchmarks for you & why do you trust those?<br>
               • Do you create your own benchmarks as we do Comma Soft AG<br>
@@ -649,47 +1493,45 @@
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-artificialintelligence-llm-activity-7160295294906101761-koWS?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
-          <h3><strong>𝗗𝗔𝗟𝗟𝗘 𝗵𝗮𝘀 𝘀𝘂𝗿𝗽𝗿𝗶𝘀𝗶𝗻𝗴 𝗴𝘂𝗮𝗿𝗱𝗿𝗮𝗶𝗹𝘀. 𝗬𝗼𝘂𝗿 𝗶𝗺𝗮𝗴𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗳𝗶𝗹𝘁𝗲𝗿𝗲𝗱 𝗯𝗮𝘀𝗲𝗱 𝗼𝗻 𝘆𝗼𝘂𝗿 𝗽𝗿𝗼𝗺𝗽𝘁. "𝗗𝗲𝗮𝗱 𝗰𝗼𝗼𝗸𝗶𝗲𝘀" 𝗺𝗮𝘆 𝗯𝗲 𝗴𝗲𝗻𝗲𝗿𝗮𝘁𝗲𝗱 ...𝘀𝗼𝗺𝗲𝘁𝗶𝗺𝗲𝘀</strong></h3>
+          <h3><strong>DALLE has surprising guardrails. Your image is not filtered based on your prompt. "Dead cookies" may be generated ...sometimes</strong></h3>
           <p>Interesting findings on DALLE's content filtering mechanisms.</p>
           <img src="images/1706806459431.jpeg" alt="Image 1">
           <p class="expandable-text">
-            𝗧𝗟; 𝗗𝗥;<br>
-            • DALLE-3 filters your content 𝐀𝐅𝐓𝐄𝐑 image creation<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • DALLE-3 filters your content AFTER image creation<br>
             • With prompt “dead cookies” you can reproduce inconsistent filtering over OpenAI API<br>
             • 40% of cases with same “dead cookies” prompt stop through content filter and 60% reach us over API<br>
             <span class="expanded-text">
-              <br>
-              𝗪𝗵𝗮𝘁 𝗶𝘀 𝗗𝗔𝗟𝗟𝗘-𝟯 🖼️<br>
-              • DALLE 3 is a generative text to image model by OpenAI also available as API<br>
+              <strong>What is DALLE-3 🖼️</strong><br>
+              • DALLE 3 is a generative text-to-image model by OpenAI also available as API<br>
               • You pay per image<br>
               • Images are created based on your prompt like “dead cookies”.<br>
               • You can also add details like: “Dead Cookies in cute Pixar style” or “Dead cookies with dramatic situation in cute Pixar style”<br>
-              • Open-Source image GenAI models alternatives are available e.g. Stable Diffusion<br>
-              • Image GenAI are under discussion because of misuse like deepfakes or because of reproducing intellectual property.<br>
+              • Open-Source image GenAI models alternatives are available e.g., Stable Diffusion<br>
+              • Image GenAI are under discussion because of misuse like deepfakes or reproducing intellectual property.<br>
               <br>
-              𝗙𝗶𝗻𝗱𝗶𝗻𝗴/𝗢𝗯𝘀𝗲𝗿𝘃𝗮𝘁𝗶𝗼𝗻: 👩🏽‍🔬<br>
+              <strong>Finding/Observation: 👩🏽‍🔬</strong><br>
               • DALLE-3 has a content filter to reduce misuse<br>
               • If you hit the content filter you do not get a resulting image for your prompt.<br>
-              • The content filter is not applied based on the prompt, it is applied 𝐀𝐅𝐓𝐄𝐑 DALLE-3 generated the image, and the API decides in an extra step if the image should be sent to you. Likely some Image classifier.<br>
-              • 𝗦𝗮𝗺𝗲 𝗽𝗿𝗼𝗺𝗽𝘁 sometimes results in an image and sometimes in a content-filter response. For the prompt “dead cookies” 𝘆𝗼𝘂 𝗴𝗲𝘁 𝗶𝗻 𝟲𝟬% 𝗼𝗳 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝘀 𝗮𝗻 𝗶𝗺𝗮𝗴𝗲 𝗮𝗻𝗱 𝗶𝗻 𝟰𝟬% 𝗮 𝗰𝗼𝗻𝘁𝗲𝗻𝘁 𝗳𝗶𝗹𝘁𝗲𝗿 issue<br>
+              • The content filter is not applied based on the prompt, it is applied AFTER DALLE-3 generated the image, and the API decides in an extra step if the image should be sent to you. Likely some Image classifier.<br>
+              • Same prompt sometimes results in an image and sometimes in a content-filter response. For the prompt “dead cookies” you get in 60% of requests an image and in 40% a content filter issue<br>
               <br>
-              𝗛𝗼𝘄 𝘄𝗲 𝗳𝗼𝘂𝗻𝗱 𝗼𝘂𝘁 🍪<br>
+              <strong>How we found out 🍪</strong><br>
               • We @Comma Soft AG develop tools and pipelines with OS GenAI but also with API requests.<br>
-              • For good API-response handling we also had to consider content filter scenario. so we combined trigger words like "dead" with something like "cookies"<br>
+              • For good API-response handling, we also had to consider content filter scenarios. So we combined trigger words like "dead" with something like "cookies"<br>
               • We had inconsistent content filter and still the finding that in case of content filter the response time was roughly as long as in the case of created image.<br>
               <br>
-              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 𝘁𝗼 𝘆𝗼𝘂 🤷🏼‍♂️<br>
+              <strong>My Questions to you 🤷🏼‍♂️</strong><br>
               • Who should pay for “dead cookies” if the resulting image was created but not sent due to content filter?<br>
               • Have you known that the content filter for DALLE-3 is applied after image generation?<br>
               • Do you also encounter content filter although your prompts were in principle ok?<br>
               • Do you think content filters are a reasonable image GenAI misuse countermeasure?<br>
               • How would you reduce Image GenAI misuse?<br>
-              • And 𝗺𝗼𝘀𝘁 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗶𝗻𝗴 (and we might never know OpenAI/DALL-E Open Ai), how do “Dead Cookies” images look like which are filtered out? 😅<br>
+              • And most interesting (and we might never know OpenAI/DALL-E Open Ai), how do “Dead Cookies” images look like which are filtered out? 😅<br>
               <br>
               The image was created by the prompt "Dead cookies in cute pixar style"<br>
               If you like more of such content, reach out to me 😊<br>
@@ -701,46 +1543,51 @@
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificalintelligence-genai-aiethics-activity-7158865169689821184-J8Y_?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
-          <h3><strong>𝗘𝘃𝗶𝗹 𝗟𝗟𝗠𝘀 𝗮𝘃𝗮𝗶𝗹𝗮𝗯𝗹𝗲! 𝗕𝗿𝗲𝗮𝗸 𝗚𝗲𝗻𝗔𝗜 𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝗳𝗶𝗻𝗲𝘁𝘂𝗻𝗶𝗻𝗴!</strong></h3>
-          <p>𝐍𝐞𝐞𝐝 𝐟𝐨𝐫 𝗟𝗟𝗠 𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝐭𝐫𝐚𝐧𝐬𝐩𝐞𝐫𝐚𝐧𝐜𝐲?</p>
+          <h3><strong>Evil LLMs available! Break GenAI Alignment through finetuning!</strong></h3>
+          <p>Need for LLM Alignment transparency?</p>
           <img src="images/evilllm.png" alt="Image 1">
           <p class="expandable-text">
-            For one of the most interesting open source LLMs, the Mixtral 8x7B a finetuned LLM is available which has “broken” Alignment & answers to problematic prompts without prompt injections. Example in images (reference see below) shows “funny” but the astonishing LLM capabilities with broken Alignment.<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • Powerful LLMs are mostly aligned<br>
+            • Alignment can be broken through finetuning<br>
+            • Need for transparency in alignment processes<br>
+            • Questions about alignment in LLMs<br>
             <span class="expanded-text">
-              Powerful LLMs are mostly aligned (Mixtral, LLAMA2, GPT4, …)<br>
+              For one of the most interesting open source LLMs, the Mixtral 8x7B a finetuned LLM is available which has “broken” Alignment & answers to problematic prompts without prompt injections. Example in images (reference see below) shows “funny” but the astonishing LLM capabilities with broken Alignment.<br>
+              <br>
+              <strong>Powerful LLMs are mostly aligned (Mixtral, LLAMA2, GPT4, …)</strong><br>
               • They try to not give problematic responses<br>
               • Some prompt-based attacks are already known to breach this behavior<br>
               • But: model weights can be finetuned to break Alignment<br>
-              • Some use cases might need different Alignment than preimpleneted LLM Alignment or our standards are not reflected within LLM behavior.<br>
+              • Some use cases might need different Alignment than pre-implemented LLM Alignment or our standards are not reflected within LLM behavior.<br>
               • Alignment process is majorly intransparent<br>
               <br>
-              𝗟𝗟𝗠/𝗚𝗣𝗧 𝗰𝗿𝗲𝗮𝘁𝗶𝗼𝗻 𝘁𝗵𝗿𝗲𝗲-𝘀𝘁𝗲𝗽 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵 ⚙️<br>
+              <strong>LLM/GPT creation three-step approach ⚙️</strong><br>
               1) Initial pretuning: Next token prediction<br>
               2) Chat/Instruction finetuning: training for conversational interaction & execution of tasks<br>
-              3) Alignment: Adjust answers to not respond to critical questions like: creation of hate speech, critical advise in health issues, creation of spam or fraudulent content, and other<br>
+              3) Alignment: Adjust answers to not respond to critical questions like: creation of hate speech, critical advice in health issues, creation of spam or fraudulent content, and other<br>
               <br>
-              𝗔𝗹𝗶𝗴𝗻𝗺𝗲𝗻𝘁 𝗘𝘅𝗽𝗹𝗮𝗻𝗮𝘁𝗶𝗼𝗻 👩🏽‍🏫<br>
+              <strong>Alignment Explanation 👩🏽‍🏫</strong><br>
               • Done in a mixture of click workers (ethical aspects raised in linked article*) and AI as evaluator (RLHF/RLAIF). Rate which answers are better not to be given or should be given differently. Based on feedback model weights are adjusted.<br>
               • Mostly intransparent process<br>
               • Unknown what is truly covered (not) to be answered<br>
               <br>
-              𝗠𝘆 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 🤷🏼‍♂️<br>
-              • Do you had ever Issues with Alignment in LLM interaction?<br>
+              <strong>My Questions 🤷🏼‍♂️</strong><br>
+              • Do you had ever issues with Alignment in LLM interaction?<br>
               • Do you check Alignment when selecting an OS Model?<br>
               • Have you ever adjusted Alignment on model weights basis?<br>
               • Do you think it is valuable or too critical to release more or less aligned LLMs?<br>
               • Do we need regulation for model alignment?<br>
               <br>
-              𝗜𝗠𝗛𝗢 🤗<br>
-              • We need transparent statements how models were aligned and how their behavior has changed, while covering ethical concerns when providing LLMs with reduced Alignment.<br>
-              • We need information how easily well adapted LLMs can be tripped with prompt engineering or finetuning.<br>
+              <strong>IMHO 🤗</strong><br>
+              • We need transparent statements on how models were aligned and how their behavior has changed, while covering ethical concerns when providing LLMs with reduced Alignment.<br>
+              • We need information on how easily well-adapted LLMs can be tripped with prompt engineering or finetuning.<br>
               • We might need less aligned LLMs for research or in special use cases:<br>
-              e.g. if in healthcare sector a model should respond because an expert is using it as assistance, or for security reasons to create e.g. sample datasets for countermeasures against LLM based phishing attacks (which are based on de-aligned) LLMs<br>
+              e.g. if in the healthcare sector a model should respond because an expert is using it as assistance, or for security reasons to create e.g. sample datasets for countermeasures against LLM-based phishing attacks (which are based on de-aligned) LLMs<br>
               • Release models with awareness of possible dual use!<br>
               <br>
               Within a great team @Comma Soft AG we are evaluating, selecting and finetuning open source LLMs for dedicated use cases.<br>
@@ -758,35 +1605,38 @@
           <button class="collapse-button" style="display: none;">Read less</button>
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_what-happens-when-you-break-llm-alignment-activity-7157765084734214144-2yGt?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
-      </li>
-      
-      
-
+      </li>      
+      <div class="blogpost-separator"><hr></div>
       <li>
         <div class="blogpost">
-          <h3><strong>𝗟𝗟𝗔𝗠𝗔𝟮 𝟭𝟯𝗕 𝗶𝘀 𝗳𝗮𝘀𝘁𝗲𝗿 𝘁𝗵𝗮𝗻 𝗟𝗟𝗔𝗠𝗔𝟮 𝟳𝗕, 𝗮𝗰𝗰𝗼𝗿𝗱𝗶𝗻𝗴 𝘁𝗼 𝗡𝗩𝗜𝗗𝗜𝗔 𝗯𝗲𝗻𝗰𝗵𝗆𝗮𝗿𝗸!</strong></h3>
+          <h3><strong>LLAMA2 13B is faster than LLAMA2 7B, according to NVIDIA benchmark!</strong></h3>
           <p>Interesting findings on NVIDIA's LLAMA 2 benchmark results.</p>
           <img src="images/1706193075396-2.jpeg" alt="Image 1">
           <p class="expandable-text">
-            𝗚𝗲𝗻𝗔𝗜 𝗰𝗼𝗺𝗺𝘂𝗻𝗶𝘁𝘆/𝗡𝗩𝗜𝗗𝗜𝗔: 𝗜 𝗮𝗺 𝗰𝗼𝗻𝗳𝘂𝘀𝗲𝗱! 𝗖𝗮𝗻 𝗮𝗻𝘆𝗼𝗻𝗲 𝗵𝗲𝗹𝗽?<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • NVIDIA LLAMA 2 Benchmark results<br>
+            • LLAMA 13B reported faster than LLAMA 7B<br>
+            • Questions about the accuracy of these findings<br>
+            • Seeking community insights<br>
             <span class="expanded-text">
-              𝗜𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗶𝗻𝗴 𝗙𝗶𝗻𝗱𝗶𝗻𝗴𝘀 📈<br>
-              • NVIDIA LLAMA 2 Benchmark (including sentence throughput) <br>
-              • Compares LLAMA-2 7B, 13B, and 70B <br>
-              • Weird finding: LLAMA 13B is reported to be faster than LLAMA 7B <br>
+              <strong>GenAI community/NVIDIA: I am confused! Can anyone help?</strong><br>
+              <strong>Interesting Findings 📈</strong><br>
+              • NVIDIA LLAMA 2 Benchmark (including sentence throughput)<br>
+              • Compares LLAMA-2 7B, 13B, and 70B<br>
+              • Weird finding: LLAMA 13B is reported to be faster than LLAMA 7B<br>
               • Explicit Numbers: 7B Model has ~4 sentences/second throughput, 13B Model has ~7 sentences/second (LLAMA 70B ~1 sentence/second - this last one suits my expectation)<br>
               <br>
-              𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 🤔<br>
+              <strong>Questions 🤔</strong><br>
               • NVIDIA NVIDIA AI, is there a mistake or can anyone else help me understand these numbers?<br>
               <br>
-              𝗛𝗼𝘄 𝘄𝗲 𝗳𝗼𝘂𝗻𝗱 𝗼𝘂𝘁 📚<br>
-              • Within our lovely GenAI team @Comma Soft AG, we are looking into tech details to implement the best solution <br>
+              <strong>How we found out 📚</strong><br>
+              • Within our lovely GenAI team @Comma Soft AG, we are looking into tech details to implement the best solution<br>
               <br>
-              𝗟𝗶𝗻𝗸 📚<br>
-              • Source I am talking about: https://lnkd.in/e2sUsi63 📚<br>
+              <strong>Link 📚</strong><br>
+              • Source I am talking about: <a href="https://lnkd.in/e2sUsi63" target="_blank">https://lnkd.in/e2sUsi63</a> 📚<br>
               <br>
-              𝗖𝗿𝗲𝗱𝗶𝘁 ❤️<br>
-              • Nvidia thanks for providing benchmarks for LLAMA2 <br>
+              <strong>Credit ❤️</strong><br>
+              • Nvidia thanks for providing benchmarks for LLAMA2<br>
               <br>
               For further GenAI and ML tech discussions or such "weird" findings, reach out to me/follow me<br>
               <br>
@@ -798,6 +1648,7 @@
           <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genai-machinelearning-llama-activity-7156292445465419776-li69?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
+      
       
     </ul>
   </main>
