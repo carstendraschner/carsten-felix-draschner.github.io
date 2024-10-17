@@ -69,45 +69,183 @@
 
       <li>
         <div class="blogpost">
-          <h3><strong>𝗡𝗼𝘁 𝗽𝗿𝗼𝗺𝗽𝘁𝗶𝗻𝗴 𝗶𝗻 𝗘𝗻𝗴𝗹𝗶𝘀𝗵?... 𝗬𝗼𝘂 𝗵𝗮𝘃𝗲 𝗣𝗿𝗼𝗯𝗹𝗲𝗺𝘀!! 𝐋𝐋𝐌 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞 𝐁𝐚𝐫𝐫𝐢𝐞𝐫𝐬 • 𝐃𝐞𝐦𝐨𝐜𝐫𝐚𝐭𝐢𝐳𝐢𝐧𝐠 𝗚𝗲𝗻𝗔𝗜 𝐚𝐧𝐝 𝐟𝐚𝐢𝐫 𝐩𝐫𝐢𝐜𝐢𝐧𝐠</strong></h3>
-          <p>Discussing the language barriers and pricing issues in Generative AI.</p>
-          <img src="images/1708345591968-4.jpeg" alt="Image 1">
+          <h3><strong>Too many LLMs?! How to keep track with all the Open Source Models? Identify the finetuned-masked LLMs and its position within the GenAI landscape!</strong></h3>
+          <p>Navigating the complex landscape of GenAI models can be challenging, but it's crucial to understand the foundational and finetuned models to make informed decisions.</p>
+          <img src="images/1710277843754.jpeg" alt="Image 1">
           <p class="expandable-text">
-            𝗧𝗼𝗸𝗲𝗻𝗶𝘇𝗲𝗿 ✂️<br>
-            • Generative AI Large Language Models process tokens<br>
-            • Tokenizer are a preprocessing step of LLMs and cut prompts into subwords called tokens<br>
-            • Tokenizers are optimized to efficiently compress text into a limited number of tokens<br>
-            • Tokenziers are optimized based on large text corpora<br>
-            • LLM pipeline hardware load grows based on number of tokens<br>
-            • OpenAI GPT API charges per token<br>
+            𝗧𝗟;𝗗𝗥 ⏱️<br>
+            • The GenAI landscape is crowded with many models <br>
+            • Keeping track of innovations and true effects is hard <br>
+            • Transparency issues with many so-called "open-source" models <br>
+            • Recommendations for navigating this landscape<br>
             <span class="expanded-text">
-              𝗠𝘆 𝗳𝗶𝗻𝗱𝗶𝗻𝗴𝘀 & 𝗺𝘆 𝘁𝗮𝗸𝗲𝘀 😰<br>
-              • 𝐘𝐨𝐮 𝐝𝐨 𝐧𝐨𝐭 𝐩𝐫𝐨𝐦𝐩𝐭 𝐢𝐧 𝐄𝐧𝐠𝐥𝐢𝐬𝐡... 𝐘𝐨𝐮 𝐡𝐚𝐯𝐞 𝐏𝐫𝐨𝐛𝐥𝐞𝐦𝐬!...<br>
-              • You have to pay more if you are communicating in a language other than English as the tokenizer creates more tokens (see image)<br>
-              • You'll likely get worse results from LLMs since they haven't seen as much text in your target language during pretraining<br>
-              • You can fit less non-English text into an LLM, which has limited context length, meaning you can't solve similarly complex tasks with same LLM<br>
-              • Using LLMs in German I am still quite lucking since German is reasonably well represented in most training data corpora and due to the relative similarity between German and English the difference in token decompositions is less pronounced. However, there are many languages (in particular those not using the latin alphabet) for which the effects are much larger.<br>
+              <strong>The current LLM landscape 🤖</strong><br>
+              • Big GenAI LLM competition<br>
+              • Lots of proprietary and open-source models<br>
+              • Many Competitors: Big players like Google, Meta, and Microsoft; rising companies like Mistral and OpenAI, but also smaller institutions with foundation models or finetuned models<br>
+              • Several release their model parameters openly on platforms like Huggingface<br>
+              • Number of GenAI models are 500k+ (HF total), 60k+ (HF text generation)<br>
               <br>
-              𝗜𝗠𝗛𝗢 🤗<br>
-              • We will gather extraordinary efficiency gains through generative AI but we need to be careful that these gains are available to truly all people including those not using GenAI in English<br>
-              • If you are building your own LLM pipeline as we do at Comma Soft AG, check out how the tokenizer and language model interact with your language. This might affect the costs or max context length of your text<br>
-              • As the pricing per token is based on the technical costs to process a certain text, I can understand it from that perspective… But it is unpleasant as you pay more for the same prompt while likely getting worse results and having more limitations in prompt complexity e.g. when using RAG insertions<br>
-              • Possibly LLMaaS could provide differently trained LLMs focused on regions and languages yielding better tokenizers and performance for lower resource languages<br>
+              <strong>Challenges with number of LLMs 🤯</strong><br>
+              • Difficult to keep track with so many models<br>
+              • Most innovations are only documented with blog posts or arxiv papers<br>
+              • True innovations and effects are barely reported<br>
+              • Model leaderboards are flooded with finetuned models<br>
+              • Not always clear which and why model architecture and training data are combined<br>
               <br>
-              𝗥𝗲𝗹𝗮𝘁𝗲𝗱 𝗧𝗼𝗽𝗶𝗰𝘀 📚<br>
-              1. Who should decide about alignment? especially when we speak about regional LLMs: <a href="https://shorturl.at/dwGIQ" target="_blank">https://shorturl.at/dwGIQ</a><br>
-              2. What is fair pricing for content-filtered GenAI results: <a href="https://shorturl.at/aCF16" target="_blank">https://shorturl.at/aCF16</a><br>
-              3. What is the best LLM for you: <a href="https://shorturl.at/bmuP8" target="_blank">https://shorturl.at/bmuP8</a><br>
-              4. Try out Open AI tokenizer: <a href="https://lnkd.in/eKhrP7qi" target="_blank">https://lnkd.in/eKhrP7qi</a><br>
+              <strong>My problem with current landscape 🤦🏼‍♂️</strong><br>
+              • Many claim to provide open-source models but do not disclose how those are constructed. What are the true training data and initial training datasets for pretuning, instruction tuning, and alignment?<br>
+              • Which training hyperparameter setup was used and why<br>
+              • Why does a specific model have exactly this combination of parameters like: number transformer layers, number heads, hidden-size, intermediate size<br>
               <br>
-              #genrativeai #artificialintelligence #machinelearning #aiethics
+              <strong>My recommendation 🤗</strong><br>
+              • Keep calm and check what is the true source foundation model<br>
+              • Understand the architecture: e.g. more or less all of those are autoregressive Decoder-Only multilayer transformer networks<br>
+              • Some introduce a novel architecture ideas like MoE (Mixture of Experts)<br>
+              • Do your research, demystify LLM-landscape, and implement benchmarks you trust as we do @Comma Soft AG!<br>
+              <br>
+              <strong>Further reading 📚</strong><br>
+              • LLAMA is not truly open source! <a href="https://rb.gy/8z8t3m" target="_blank">https://rb.gy/8z8t3m</a><br>
+              • Alignment can be destroyed by finetuning! <a href="https://rb.gy/ehf7s9" target="_blank">https://rb.gy/ehf7s9</a><br>
+              • Why are LLMs 7, 13, 70B large? <a href="https://rb.gy/zkpk5r" target="_blank">https://rb.gy/zkpk5r</a><br>
+              • My take on “We have beaten ChatGPT” <a href="https://rb.gy/juw4pg" target="_blank">https://rb.gy/juw4pg</a><br>
+              • LMSYS Chatbot Arena <a href="https://rb.gy/f2ptbb" target="_blank">https://rb.gy/f2ptbb</a><br>
+              <br>
+              <strong>Credit ❤️</strong><br>
+              • R&D teams providing truly open-source models<br>
+              • Accessible research contributions explaining effects of LLM optimization techniques<br>
+              • LMSYS Chatbot Arena as an alternative to Open LLM leaderboard with focus on the original foundation models<br>
+              <br>
+              How do you find the most promising OS foundation model for your UC?<br>
+              <br>
+              For more content, brainstorming and discussions, follow me or reach out to me 🥰
             </span>
           </p>
           <button class="expand-button">Read more</button>
           <button class="collapse-button" style="display: none;">Read less</button>
-          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_genrativeai-artificialintelligence-machinelearning-activity-7165320754878730242-CICO?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_%F0%9D%97%A7%F0%9D%97%BC%F0%9D%97%BC-%F0%9D%97%BA%F0%9D%97%AE%F0%9D%97%BB%F0%9D%98%86-%F0%9D%97%9F%F0%9D%97%9F%F0%9D%97%A0%F0%9D%98%80-%F0%9D%97%9B%F0%9D%97%BC-%F0%9D%98%81%F0%9D%97%BC-%F0%9D%97%B8-activity-7173581553552318464-6w1Z?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
         </div>
       </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>Be careful when you are using LLAMA-2! Legal risks & Sustainability Implications due to LLAMA-2 is (NOT) Open Source.</strong></h3>
+          <p>Important considerations regarding LLAMA-2's legal and sustainability implications.</p>
+          <img src="images/1709552210761-2.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            𝗪𝗵𝗮𝘁 𝗶𝘀 𝗟𝗟𝗔𝗠𝗔-𝟮? 🦙<br>
+            <span class="expanded-text">
+              • LLAMA 2 is a Large Language Model by Meta<br>
+              • Thanks to Meta its weights are openly available over e.g. Hugging Face<br>
+              • Meta claims to provide LLAMAs as open-source Models<br>
+              • LLAMA-2 is under the LLAMA license which has some restrictions [1]<br>
+              <br>
+              𝗪𝗵𝘆 𝗶𝘀 𝗟𝗟𝗔𝗠𝗔 𝗡𝗢𝗧 𝗢𝗽𝗲𝗻 𝗦𝗼𝘂𝗿𝗰𝗲? [2] ❌<br>
+              • Open Source means software under a license aligned with Open Source Definition (OSD)<br>
+              • This includes no discrimination against persons or groups or fields of endeavor (OSD points 5 and 6)<br>
+              • Meta’s license puts restrictions for commercial use (paragraph 2)<br>
+              • Meta also restricts the use of the model and software for certain purposes (the Acceptable Use Policy)<br>
+              <br>
+              𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗜𝗺𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀! 👨🏼‍💻<br>
+              IMHO, From a technical perspective the license statement $1V is another major challenge: “You will not use the Llama Materials or any output or results of the Llama Materials to improve any other large language model (excluding Llama 2 or derivative works thereof)”. I interpret this as a barrier if you use this model in combination with other LLMs in workflows like:<br>
+              • AI as a judge in benchmark or evaluation pipelines<br>
+              • Reinforcement Learning with AI Feedback - RLAIF<br>
+              • Data Synthesis pipelines<br>
+              • Model Distillation<br>
+              <br>
+              𝗠𝗲𝘁𝗮 𝗰𝗿𝗲𝗮𝘁𝗲𝘀 𝗶𝘀𝘀𝘂𝗲𝘀 𝘄𝗶𝘁𝗵 𝘁𝗵𝗲 “𝗼𝗽𝗲𝗻 𝘀𝗼𝘂𝗿𝗰𝗲” 𝗟𝗟𝗔𝗠𝗔-𝟮 😢<br>
+              • We will not reach true democratization of LLM application when usage is limited like this<br>
+              • Those licenses can create confusion about what is open source in general, what is truly allowed, and what is not with those LLMs<br>
+              • If we can barely reuse those pre-tuned LLMs we waste a lot of energy/resources spent on pretraining on more or less the same internet text corpus. 🌱<br>
+              • And we still do not know how it is truly pre-trained, finetuned, and aligned. I’d appreciate more transparency here!<br>
+              <br>
+              All of those statements are a part of our R&D journey @Comma Soft AG [3,4] developing LLM tools aligned with such challenging special licenses. I want to bring up the discussion about LLM usage and the meaning of open source and I am NOT giving legal advice.<br>
+              <br>
+              What do you think about Meta's LLAMA-2 license? Will they change it in LLAMA-3? And what implications do you derive from this license?<br>
+              <br>
+              Reading list 📖<br>
+              [1] <a href="https://lnkd.in/e9bM43p9" target="_blank">LLAMA-2 License</a><br>
+              [2] <a href="https://shorturl.at/jmow3" target="_blank">Meta’s LLaMa 2 license is not Open Source</a><br>
+              [3] <a href="https://shorturl.at/nwzHW" target="_blank">Weird LLAMA benchmark</a><br>
+              [4] <a href="https://shorturl.at/nvFZ6" target="_blank">Reasons for LLAMA sizes</a><br>
+              <br>
+              #artificialintelligence #machinelearning #llm #aiethics
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_artificialintelligence-machinelearning-llm-activity-7170381681563021312-_A5j?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>The major players in GenAI are facing challenges with their Generative AIs. GenAI capabilities and security issues related to LLMs Tools • 37C3 Presentation</strong></h3>
+          <p>Challenges and security issues in GenAI and LLMs, highlighted at 37C3.</p>
+          <img src="images/1708966127693.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            Introduction 📖<br>
+            GenAI has immense capabilities and can support a variety of processes. As developers, we have the responsibility to build ethical and secure GenAI pipelines. A noteworthy but easily overlooked presentation at the 37C3 event highlighted how tools from leading companies like OpenAI, Microsoft, and Google have been exploited though "Indirect Prompt Injections".<br>
+            <span class="expanded-text">
+              Threat Categories ⚠️<br>
+              • Model Issues: Bias, offensive/dangerous responses, hallucinations, backdoored models. <br>
+              • User as the attacker: Direct Prompt Injection, Print/Overwrite System Instructions Do-Anything-Now, Denial of Service. <br>
+              • Indirect Prompt Injections: AI Injection, Scams, Data Exfiltration, Plugin Request Forgery.<br>
+              <br>
+              Challenges 💪🏼<br>
+              The development of security and safeguards for GenAI is still a "work in progress" and consists of various components 👮🏼<br>
+              • Alignment is a fine-tuning approach aimed at training model behaviors to respond securely to critical prompts. Learn more here: <a href="https://lnkd.in/eWS-VZCD" target="_blank">https://lnkd.in/eWS-VZCD</a><br>
+              • In Image GenAI, for instance, you can use a post-processing content filter. Check out this peculiar content filter behavior here: <a href="https://lnkd.in/eRaX9JuT" target="_blank">https://lnkd.in/eRaX9JuT</a><br>
+              • An interesting set of additional threats and potential countermeasures were recently presented at the 37C3 event, focusing on Indirect Prompt Injections.<br>
+              <br>
+              Credits & Links ❤️<br>
+              • If you're interested in this topic, especially Indirect Prompt Injections, I highly recommend the 37C3 presentation. Watch the video on YouTube: <a href="https://lnkd.in/enjMee6S" target="_blank">https://lnkd.in/enjMee6S</a><br>
+              • A huge thanks to everyone supporting the security of these GenAI tools and for their tireless efforts in educating and presenting their findings for free. Special thanks to Johann Rehberger<br>
+              • As part of an exceptional team at @Comma Soft AG, we're developing pipelines with a holistic perspective on GenAI.<br>
+              <br>
+              #generativeai #llm #aisecurity #aiethics #37c3
+            </span>
+          </p>
+          <button class="expand-button">Read more</button>
+          <button class="collapse-button" style="display: none;">Read less</button>
+          <a class="linkedin-button" href="https://www.linkedin.com/posts/carsten-draschner_generativeai-llm-aisecurity-activity-7167923469148475392-plqf?utm_source=share&utm_medium=member_desktop" target="_blank">LinkedIn Post</a>
+        </div>
+      </li>
+      
+
+      <li>
+        <div class="blogpost">
+          <h3><strong>Not prompting in English?... You have Problems!! LLM Language Barriers • Democratizing GenAI and fair pricing</strong></h3>
+          <p>Discussing the language barriers and pricing issues in Generative AI.</p>
+          <img src="images/1708345591968-4.jpeg" alt="Image 1">
+          <p class="expandable-text">
+            <strong>TL;DR:</strong><br>
+            • Language barriers in LLMs cause higher costs for non-English prompts.<br>
+            • Non-English users may get poorer results due to less pretraining data.<br>
+            • Ensuring generative AI benefits everyone is crucial.<br>
+            <span class="expanded-text">
+              Tokenizer ✂️<br>
+              • Generative AI Large Language Models process tokens<br>
+              • Tokenizers are a preprocessing step of LLMs and cut prompts into subwords called tokens<br>
+              • Tokenizers are optimized to efficiently compress text into a limited number of tokens<br>
+              • Tokenizers are optimized based on large text corpora<br>
+              • LLM pipeline hardware load grows based on the number of tokens<br>
+              • OpenAI GPT API charges per token<br>
+              <br>
+              My findings & my takes 😰<br>
+              • You do not prompt in English... You have Problems!...<br>
+              • You have to pay more if you are communicating in a language other than English as the tokenizer creates more tokens (see image)<br>
+              • You'll likely get worse results from LLMs since they haven't seen as much text in your target language during pretraining<br>
+              • You can fit less non-English text into an LLM, which has limited context length, meaning you can't solve similarly complex tasks with the same LLM<br>
+              • Using LLMs in German I am still quite lucky since German is reasonably well represented in most training data corpora and due to the relative similarity between German and English the difference in token decompositions is less pronounced. However, there are many languages (in particular those not using the Latin alphabet) for which the effects are much larger.<br>
+              <br>
+              IMHO 🤗<br>
+              • We will gather extraordinary efficiency gains through generative AI but we need to be careful that these gains are available to truly all people including those not using GenAI in English<br>
+              • If you are building your own LLM pipeline as we do at Comma Soft AG, check out how the tokenizer and language model interact with your language. This might affect the costs or max context length of your text<br>
+              • As the pricing per token is based on the technical costs to process a certain text, I can understand it from that perspective… But it is unpleasant as you pay more for the same prompt while likely getting worse results and having more limitations in prompt complexity e.g. when
+      
       
 
       <li>
