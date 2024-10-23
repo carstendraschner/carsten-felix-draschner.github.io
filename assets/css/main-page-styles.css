@@ -77,10 +77,6 @@ body.main-page {
     object-fit: cover; /* Ensure the image fits within the box */
   }
   
-  .content-item img[alt] {
-    display: none; /* Hide image if alt text is present */
-  }
-  
   .content-item::before {
     content: attr(alt);
     font-size: 2rem; /* Adjust as needed for emoji size */
